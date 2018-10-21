@@ -7,7 +7,7 @@
           <a class="mt-0 mb-1 font-weight-bold text-primary" for="location" href="change_password.php"><i class="fa fa-cogs" aria-hidden="true"></i>  Change Password</a>
       </div>
       <div class="form-group">
-          <a class="mt-0 mb-1 font-weight-bold text-primary" for="location" href="change_password.php"><i class="fa fa-cogs" aria-hidden="true"></i>  Supporting Documents</a>
+          <a class="mt-0 mb-1 font-weight-bold text-primary" for="location" href="support_docs.php"><i class="fa fa-cogs" aria-hidden="true"></i>  Supporting Documents</a>
 
       </div>
 

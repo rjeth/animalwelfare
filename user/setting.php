@@ -12,17 +12,11 @@
                 <div class="card mb-4 wow fadeIn">
                           <!--Card content-->
                           <div class="card-body">
-
                               <div class="media d-block d-md-flex mt-3">
-
                                       <?php include("side_settings.php"); ?>
                               </div>
-
                           </div>
-
                       </div>
-
-
               </div>
 
                 <!--Grid column-->
