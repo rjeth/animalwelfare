@@ -59,7 +59,7 @@
                 <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
                   available. Create your own, stunning website.</strong>
               </p>
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start Adopting Now
+              <a href="../user/register.php" class="btn btn-outline-white btn-lg">Start Adopting Now
                 <i class="fa fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -87,7 +87,7 @@
                 <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
                   available. Create your own, stunning website.</strong>
               </p>
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
+              <a href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
                 <i class="fa fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -119,7 +119,7 @@
                   available. Create your own, stunning website.</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
+              <a href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
                 <i class="fa fa-graduation-cap ml-2"></i>
               </a>
             </div>

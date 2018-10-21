@@ -23,7 +23,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="../../home/index.php">
+      <a class="navbar-brand" href="../../home/home.php">
         <strong>ANIMAL WELFARE</strong>
       </a>
 

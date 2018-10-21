@@ -23,7 +23,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="../home/">
         <strong>ANIMAL WELFARE</strong>
       </a>
 
@@ -39,7 +39,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Home
+            <a class="nav-link" href="../home/">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>

@@ -96,14 +96,13 @@ include("../layout/head.php");
 
               <!--Grid column-->
               <div class="col-md-12">
-
                 <div class="card">
                   <div class="card-body">
 
                     <h2 class="font-weight-bold my-4 text-center mb-5 mt-4 font-weight-bold">
                       <strong>REGISTER</strong>
                     </h2>
-                    <hr>
+
 
                     <!--Grid row-->
                     <div class="row mt-5">
