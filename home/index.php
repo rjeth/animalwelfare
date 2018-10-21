@@ -50,7 +50,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>WE ARE LOOKING FOR NEW OWNERS</strong>
+                <strong>PUTANG INANG PROGRAMMER NA SI RENZO</strong>
               </h1>
               <p>
                 <strong>Best & free guide of responsive web design</strong>
