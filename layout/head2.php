@@ -9,11 +9,11 @@
   <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="../assets/css/mdb.min.css" rel="stylesheet">
+  <link href="../../assets/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="../assets/css/style.min.css" rel="stylesheet">
+  <link href="../../assets/css/style.min.css" rel="stylesheet">
 
 
 </head>
@@ -23,7 +23,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="../home/index.php">
+      <a class="navbar-brand" href="../../home/index.php">
         <strong>ANIMAL WELFARE</strong>
       </a>
 
@@ -39,25 +39,25 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="blog.php">Home
+            <a class="nav-link" href="../home/blog.php">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="adoptable.php">Pets</a>
+            <a class="nav-link" href="../pet/adoptable.php">Pets</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="inbox.php">Inbox</a>
+            <a class="nav-link" href="../inbox/inbox.php">Inbox</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="setting.php">Settings</a>
+            <a class="nav-link" href="../settings/setting.php">Settings</a>
           </li>
         </ul>
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a href="logout.php" class="nav-link border border-light rounded waves-effect waves-light"
+            <a href="../logout.php" class="nav-link border border-light rounded waves-effect waves-light"
              >
               <i class="fa fa-github mr-2"></i>Log out
             </a>

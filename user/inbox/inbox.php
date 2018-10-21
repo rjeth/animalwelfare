@@ -1,4 +1,4 @@
-<?php include("../layout/head2.php");  ?>
+<?php include("../../layout/head2.php");  ?>
   <style type="text/css">
     /* Necessary for full page carousel*/
     html,
@@ -169,4 +169,4 @@
       </main>
 
 
-<?php include("../layout/foot.php"); ?>
+<?php include("../../layout/foot.php"); ?>

@@ -1,6 +1,6 @@
-<?php require_once("../core/session.php"); ?>
-<?php require_once("../core/config.php"); ?>
-<?php include("../layout/head2.php"); ?>
+<?php require_once("../../core/session.php"); ?>
+<?php require_once("../../core/config.php"); ?>
+<?php include("../../layout/head2.php"); ?>
 <main class="mt-5 pt-5 pb-5">
     <div class="container">
         <!--Section: Post-->
@@ -97,4 +97,4 @@
 </main>
 
 
-   <?php include("../layout/foot.php"); ?>
+   <?php include("../../layout/foot.php"); ?>
