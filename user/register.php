@@ -1,8 +1,6 @@
-
+<?php include("../core/verification.php");?>
 <?php
-require_once 'core/init.php';
-include 'layout/head.php';
-include 'core/sign_up.php';
+include("../layout/head.php");
  ?>
 <style>
     html,

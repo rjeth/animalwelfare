@@ -199,13 +199,9 @@
                                   <!--/.Card content-->
                               </div>
                               <!--/.Card Light-->
-
                           </section>
                           <!--Section: Live preview-->
-
                       </div>
-
-
                   </div>
 
               </section>
