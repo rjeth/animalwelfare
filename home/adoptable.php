@@ -79,7 +79,7 @@
                               <div class="card">
                                   <!--Card image-->
                                   <div class="view overlay">
-                                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" class="card-img-top" alt="fern">
+                                      <img src="https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg" class="card-img-top" alt="fern">
                                       <a>
                                           <div class="mask rgba-white-slight waves-effect waves-light"></div>
                                       </a>
@@ -87,14 +87,24 @@
                                   <!--/.Card image-->
                                   <!--Card content-->
                                   <div class="card-body">
-                                      <!--Social shares button-->
-                                      <a class="activator mr-3"><i class="fa fa-share-alt"></i></a>
-                                      <!--Title-->
-                                      <h4 class="card-title">Card title</h4>
-                                      <hr>
+                                      <h4 class="card-title">Pet name </h4>
+
                                       <!--Text-->
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
+                                      <div class="card-text">
+                                        <div >
+                                            <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">Location</p>
+                                            <label id="location">dignissimos ducimus</label>
+
+                                        </div>
+                                          <div>
+                                            <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">age</p>
+                                            <label id="location">dignissimos ducimus</label>
+
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <a class="link-text">
+                                        <h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
                                   </div>
                                   <!--/.Card content-->
                               </div>
@@ -104,184 +114,6 @@
                           <!--Section: Live preview-->
 
                       </div>
-                      <div class="col-md-4 mb-4">
-                          <!--Subheading-->
-
-
-                          <!--Section: Live preview-->
-                          <section>
-
-                              <!--Card Light-->
-                              <div class="card">
-                                  <!--Card image-->
-                                  <div class="view overlay">
-                                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" class="card-img-top" alt="fern">
-                                      <a>
-                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                      </a>
-                                  </div>
-                                  <!--/.Card image-->
-                                  <!--Card content-->
-                                  <div class="card-body">
-                                      <!--Social shares button-->
-                                      <a class="activator mr-3"><i class="fa fa-share-alt"></i></a>
-                                      <!--Title-->
-                                      <h4 class="card-title">Card title</h4>
-                                      <hr>
-                                      <!--Text-->
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
-                                  </div>
-                                  <!--/.Card content-->
-                              </div>
-                              <!--/.Card Light-->
-
-                          </section>
-                          <!--Section: Live preview-->
-
-                      </div>
-                      <div class="col-md-4 mb-4">
-                          <!--Subheading-->
-
-
-                          <!--Section: Live preview-->
-                          <section>
-
-                              <!--Card Light-->
-                              <div class="card">
-                                  <!--Card image-->
-                                  <div class="view overlay">
-                                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" class="card-img-top" alt="fern">
-                                      <a>
-                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                      </a>
-                                  </div>
-                                  <!--/.Card image-->
-                                  <!--Card content-->
-                                  <div class="card-body">
-                                      <!--Social shares button-->
-                                      <a class="activator mr-3"><i class="fa fa-share-alt"></i></a>
-                                      <!--Title-->
-                                      <h4 class="card-title">Card title</h4>
-                                      <hr>
-                                      <!--Text-->
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
-                                  </div>
-                                  <!--/.Card content-->
-                              </div>
-                              <!--/.Card Light-->
-
-                          </section>
-                          <!--Section: Live preview-->
-
-                      </div>
-                      <div class="col-md-4 mb-4">
-                          <!--Subheading-->
-                          <!--Section: Live preview-->
-                          <section>
-                              <!--Card Light-->
-                              <div class="card">
-                                  <!--Card image-->
-                                  <div class="view overlay">
-                                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" class="card-img-top" alt="fern">
-                                      <a>
-                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                      </a>
-                                  </div>
-                                  <!--/.Card image-->
-                                  <!--Card content-->
-                                  <div class="card-body">
-                                      <!--Social shares button-->
-                                      <a class="activator mr-3"><i class="fa fa-share-alt"></i></a>
-                                      <!--Title-->
-                                      <h4 class="card-title">Card title</h4>
-                                      <hr>
-                                      <!--Text-->
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
-                                  </div>
-                                  <!--/.Card content-->
-                              </div>
-                              <!--/.Card Light-->
-
-                          </section>
-                          <!--Section: Live preview-->
-
-                      </div>
-                      <div class="col-md-4 mb-4">
-                          <!--Subheading-->
-
-
-                          <!--Section: Live preview-->
-                          <section>
-
-                              <!--Card Light-->
-                              <div class="card">
-                                  <!--Card image-->
-                                  <div class="view overlay">
-                                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" class="card-img-top" alt="fern">
-                                      <a>
-                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                      </a>
-                                  </div>
-                                  <!--/.Card image-->
-                                  <!--Card content-->
-                                  <div class="card-body">
-                                      <!--Social shares button-->
-                                      <a class="activator mr-3"><i class="fa fa-share-alt"></i></a>
-                                      <!--Title-->
-                                      <h4 class="card-title">Card title</h4>
-                                      <hr>
-                                      <!--Text-->
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
-                                  </div>
-                                  <!--/.Card content-->
-                              </div>
-                              <!--/.Card Light-->
-
-                          </section>
-                          <!--Section: Live preview-->
-
-                      </div>
-                      <div class="col-md-4 mb-4">
-                          <!--Subheading-->
-
-
-                          <!--Section: Live preview-->
-                          <section>
-
-                              <!--Card Light-->
-                              <div class="card">
-                                  <!--Card image-->
-                                  <div class="view overlay">
-                                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" class="card-img-top" alt="fern">
-                                      <a>
-                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                      </a>
-                                  </div>
-                                  <!--/.Card image-->
-                                  <!--Card content-->
-                                  <div class="card-body">
-                                      <!--Social shares button-->
-                                      <a class="activator mr-3"><i class="fa fa-share-alt"></i></a>
-                                      <!--Title-->
-                                      <h4 class="card-title">Card title</h4>
-                                      <hr>
-                                      <!--Text-->
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
-                                  </div>
-                                  <!--/.Card content-->
-                              </div>
-                              <!--/.Card Light-->
-
-                          </section>
-                          <!--Section: Live preview-->
-
-                      </div>
-
                   </div>
 
               </section>
