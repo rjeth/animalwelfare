@@ -14,6 +14,13 @@
   <link href="../../assets/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="../../assets/css/style.min.css" rel="stylesheet">
+  <script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../assets/js/mdb.min.js"></script>
 
 
 </head>
