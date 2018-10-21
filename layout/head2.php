@@ -39,7 +39,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../home/blog.php">Home
+            <a class="nav-link" href="../home/home.php">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
