@@ -11,24 +11,21 @@
               <div class="col-md-4 mb-4">
                 <div class="card mb-4 wow fadeIn">
                           <!--Card content-->
-                          <div class="card-body">
-                              <?php include("user_info_display.php"); ?>
-
-                          </div>
-
+                    <div class="card-body">
+                        <?php include("user_info_display.php"); ?>
                       </div>
-                  <div class="card mb-4 wow fadeIn">
-
+                  </div>
+                  <!--div class="card mb-4 wow fadeIn">
                       <div class="card-header">Supporting Docs</div>
 
-                      <!--Card content-->
+        
                       <div class="card-body">
                         <div class="form-group">
                             <a class="mt-0 mb-1 font-weight-bold text-primary" for="location" href="../settings/support_docs.php"><i class="fa fa-cogs" aria-hidden="true"></i>  Supporting Documents</a>
 
                         </div>
                       </div>
-                  </div>
+                  </div-->
                   <!--/.Card-->
               </div>
                 <!--Grid column-->
