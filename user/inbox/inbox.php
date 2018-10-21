@@ -59,103 +59,85 @@
                                    <hp class="mb-1"><strong>Dawid Adach</strong></hp>
                                    <small>13 July</small>
                                </div>
-
                                <!-- Message -->
                                <p class="text-truncate"><strong>You: </strong> Donec id elit non mi porta gravida at eget metus. Maecenas
                                    sed diam eget risus varius blandit.</p>
                            </a>
-
                            <!-- Single message -->
                            <a href="#" class="list-group-item list-group-item-action media">
                                <!-- Avatar -->
                                <img class="mr-3 avatar-sm float-left" src="https://secure.gravatar.com/avatar/8c051fd54e4c811e02bbc78d50549280?s=150&amp;d=mm&amp;r=g">
-
                                <!-- Author -->
                                <div class="d-flex justify-content-between mb-1 ">
                                    <hp class="mb-1"><strong>Michal Szymanski</strong></hp>
                                    <small>14 July</small>
                                </div>
-
                                <!-- Message -->
                                <p class="text-truncate"><span class="badge red">MDB Team</span> <strong>Michal: </strong> Donec id elit non
                                    mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                            </a>
-
                            <!-- Single message -->
                            <a href="#" class="list-group-item list-group-item-action media">
                                <!-- Avatar -->
                                <img class="mr-3 avatar-sm float-left" src="https://mdbootstrap.com/img/Photos/Avatars/piotr.jpg">
-
                                <!-- Author -->
                                <div class="d-flex justify-content-between mb-1 ">
                                    <hp class="mb-1"><strong>Piotr Bender</strong></hp>
                                    <small>15 July</small>
                                </div>
-
                                <!-- Message -->
                                <p class="text-truncate"><strong>Piotr: </strong> Donec id elit non mi porta gravida at eget metus. Maecenas
                                    sed diam eget risus varius blandit.</p>
                            </a>
 
-                           <!-- Single message -->
+                           <!-- Sinle message -->
                            <a href="#" class="list-group-item list-group-item-action media">
                                <!-- Avatar -->
                                <img class="mr-3 avatar-sm float-left" src="https://mdbootstrap.com/img/Photos/Avatars/michal.jpg">
-
                                <!-- Author -->
                                <div class="d-flex justify-content-between mb-1 ">
                                    <hp class="mb-1"><strong>Michal Krawczyk</strong></hp>
                                    <small>16 July</small>
                                </div>
-
                                <!-- Message -->
                                <p class="text-truncate"><strong>You: </strong> Donec id elit non mi porta gravida at eget metus. Maecenas
                                    sed diam eget risus varius blandit.</p>
                            </a>
-
                            <!-- Single message -->
                            <a href="#" class="list-group-item list-group-item-action media">
                                <!-- Avatar -->
                                <img class="mr-3 avatar-sm float-left" src="https://mdbootstrap.com/img/Photos/Avatars/laura.jpg">
-
                                <!-- Author -->
                                <div class="d-flex justify-content-between mb-1 ">
                                    <hp class="mb-1"><strong>Laura Choromanska</strong></hp>
                                    <small>16 July</small>
                                </div>
-
                                <!-- Message -->
                                <p class="text-truncate"><strong>Laura: </strong> Donec id elit non mi porta gravida at eget metus. Maecenas
                                    sed diam eget risus varius blandit.</p>
                            </a>
-
                            <!-- Single message -->
                            <a href="#" class="list-group-item list-group-item-action media">
                                <!-- Avatar -->
                                <img class="mr-3 avatar-sm float-left" src="https://mdbootstrap.com/img/Photos/Avatars/bartek.jpg">
-
                                <!-- Author -->
                                <div class="d-flex justify-content-between mb-1 ">
                                    <hp class="mb-1"><strong>Bartłomiej Malanowski</strong></hp>
                                    <small>16 July</small>
                                </div>
-
                                <!-- Message -->
                                <p class="text-truncate"><strong>Miroslaw: </strong> Donec id elit non mi porta gravida at eget metus. Maecenas
                                    sed diam eget risus varius blandit.</p>
                            </a>
-
                            <!-- Single message -->
                            <a href="#" class="list-group-item list-group-item-action media">
                                <!-- Avatar -->
                                <img class="mr-3 avatar-sm float-left" src="https://mdbootstrap.com/img/Photos/Avatars/filip.jpg">
-
                                <!-- Author -->
                                <div class="d-flex justify-content-between mb-1 ">
                                    <hp class="mb-1"><strong>Filip Kapusta</strong></hp>
                                    <small>16 July</small>
                                </div>
-
                                <!-- Message -->
                                <p class="text-truncate"><strong>You: </strong> Donec id elit non mi porta gravida at eget metus. Maecenas
                                    sed diam eget risus varius blandit.</p>
