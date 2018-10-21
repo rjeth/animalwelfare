@@ -31,12 +31,9 @@
                   </div>
                   <!--/.Card-->
               </div>
-
                 <!--Grid column-->
                 <div class="col-md-8 mb-4">
-
                     <!--Featured Image-->
-
                     <div class="card mb-3 wow fadeIn">
                         <div class="card-header font-weight-bold">POST</div>
                         <div class="card-body">
