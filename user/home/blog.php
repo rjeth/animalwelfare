@@ -1,6 +1,6 @@
-<?php require_once("../core/session.php"); ?>
-<?php require_once("../core/config.php"); ?>
-<?php include("../layout/head2.php"); ?>
+<?php require_once("../../core/session.php"); ?>
+<?php require_once("../../core/config.php"); ?>
+<?php include("../../layout/head2.php"); ?>
 <main class="mt-5 pt-5 pb-5">
     <div class="container">
         <!--Section: Post-->
@@ -10,84 +10,26 @@
             <div class="row">
               <div class="col-md-4 mb-4">
                 <div class="card mb-4 wow fadeIn">
-
-
-
                           <!--Card content-->
                           <div class="card-body">
-
-                              <div class="media d-block d-md-flex mt-3">
-                                  <img class="d-flex mb-3 mx-auto z-depth-1" style="width: 100px;" alt="Generic placeholder image" src="https://mdbootstrap.com/img/Photos/Avatars/img (30).jpg">
-                                  <div class="media-body text-center text-md-left ml-md-3 ml-0">
-                                      <h5 class="mt-0 font-weight-bold">Caroline Horwitz
-                                      </h5>
-                                      <div>
-                                          <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">BIO</p>
-                                          <label id="location">dignissimos ducimus</label>
-
-                                      </div>
-
-                                      <div>
-                                          <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">Location</p>
-                                          <label id="location">dignissimos ducimus</label>
-
-                                      </div>
-                                      <div>
-                                          <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">Pets</p>
-                                          <label id="location">dignissimos ducimus</label>
-
-                                      </div>
-                                    
-
-
-                                  </div>
-                              </div>
+                              <?php include("user_info_display.php"); ?>
 
                           </div>
 
                       </div>
                   <div class="card mb-4 wow fadeIn">
 
-                      <div class="card-header">Related articles</div>
+                      <div class="card-header">Supporting Docs</div>
 
                       <!--Card content-->
                       <div class="card-body">
+                        <div class="form-group">
+                            <a class="mt-0 mb-1 font-weight-bold text-primary" for="location" href="../settings/support_docs.php"><i class="fa fa-cogs" aria-hidden="true"></i>  Supporting Documents</a>
 
-                          <ul class="list-unstyled">
-                              <li class="media">
-                                  <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder7.jpg" alt="Generic placeholder image">
-                                  <div class="media-body">
-                                      <a href="">
-                                          <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
-                                      </a>
-                                      Cras sit amet nibh libero, in gravida nulla (...)
-                                  </div>
-                              </li>
-                              <li class="media my-4">
-                                  <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg" alt="An image">
-                                  <div class="media-body">
-                                      <a href="">
-                                          <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
-                                      </a>
-                                      Cras sit amet nibh libero, in gravida nulla (...)
-                                  </div>
-                              </li>
-                              <li class="media">
-                                  <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder5.jpg" alt="Generic placeholder image">
-                                  <div class="media-body">
-                                      <a href="">
-                                          <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
-                                      </a>
-                                      Cras sit amet nibh libero, in gravida nulla (...)
-                                  </div>
-                              </li>
-                          </ul>
-
+                        </div>
                       </div>
-
                   </div>
                   <!--/.Card-->
-
               </div>
 
                 <!--Grid column-->
@@ -190,4 +132,4 @@
 </main>
 
 
-   <?php include("../layout/foot.php"); ?>
+   <?php include("../../layout/foot.php"); ?>

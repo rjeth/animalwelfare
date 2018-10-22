@@ -1,5 +1,4 @@
-<?php include("../core/verification.php");?>
-<?php include("../layout/head.php");  ?>
+<?php include("../../layout/head2.php");  ?>
   <style type="text/css">
     /* Necessary for full page carousel*/
     html,
@@ -45,18 +44,18 @@
               <input type="text" id="textInput" class="form-control mb-4" placeholder="Text input">
               <div class="row">
               <div class="col-md-4">
-                <label for="select">Type</label>
+                <label for="select">Default select</label>
                 <select class="browser-default custom-select mb-4" id="select">
-                  <option value="" disabled="" selected="">Type</option>
+                  <option value="" disabled="" selected="">Choose your option</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
                   <option value="3">Option 3</option>
                 </select>
               </div>
               <div class="col-md-4">
-                <label for="select">Location</label>
+                <label for="select">Default select</label>
                 <select class="browser-default custom-select mb-4" id="select">
-                  <option value="" disabled="" selected="">Location</option>
+                  <option value="" disabled="" selected="">Choose your option</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
                   <option value="3">Option 3</option>
@@ -88,7 +87,7 @@
                                   <!--Card content-->
                                   <div class="card-body">
                                       <h4 class="card-title">Pet name </h4>
-
+                                  
                                       <!--Text-->
                                       <div class="card-text">
                                         <div >
@@ -114,6 +113,7 @@
                           <!--Section: Live preview-->
 
                       </div>
+
                   </div>
 
               </section>
@@ -134,4 +134,4 @@
   <!--Footer-->
 
 
-<?php include("../layout/foot.php"); ?>
+<?php include("../../layout/foot.php"); ?>

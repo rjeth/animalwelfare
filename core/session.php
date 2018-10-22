@@ -1,6 +1,6 @@
 <?php
 
-require_once ("../core/config.php");
+require_once ("../../core/config.php");
 session_start();
 
 // check if user is not logged in
