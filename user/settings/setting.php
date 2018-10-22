@@ -30,9 +30,39 @@
 
                             <!-- Default form reply -->
                             <form>
+                              <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">image</span>
+                                </div>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+                                  <label class="custom-file-label" for="fileInput">File Label</label>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="replyFormComment">Username:</label>
+                                  <input type="text" class="form-control" id="replyFormComment" ></input>
+                              </div>
+                              <div class="form-group">
+                                  <label for="replyFormComment">Bios</label>
+                                  <textarea type="text" class="form-control" id="replyFormComment" rows="5"></textarea>
+                              </div>
 
+                              <hr class="mt-10">
                                 <div class="form-group">
-                                    <label for="replyFormComment">Fullname:</label>
+                                    <label for="replyFormComment">Firstname:</label>
+                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                </div>
+                                <div class="form-group">
+                                    <label for="replyFormComment">Lastname:</label>
+                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                </div>
+                                <div class="form-group">
+                                    <label for="replyFormComment">Middlename:</label>
+                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                </div>
+                                <div class="form-group">
+                                    <label for="replyFormComment">Suffix:</label>
                                     <input type="text" class="form-control" id="replyFormComment" ></input>
                                 </div>
                                 <div class="form-group">

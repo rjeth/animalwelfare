@@ -152,12 +152,28 @@
       <!--Section: Main info-->
   <hr>
       <!--Section: Main features & Quick Start-->
+      <!-- Jumbotron -->
+<div class="jumbotron text-center">
+  <h2 class="card-title h2">Announcements</h2>
+  <p class="blue-text my-4 font-weight-bold">Powerful and free Material Design UI KIT</p>
+<!-- Grid row -->
+    <div class="row d-flex justify-content-center">
+<!-- Grid column -->
+      <div class="col-xl-7 pb-2">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+<!-- Grid column -->
+  </div>
+<!-- Grid row -->
+
+  <hr class="my-4">
+</div>
+<!-- Jumbotron -->
       <section class="mb-5">
 
-        <h3 class="h3 text-center mb-5">Recently Added</h3>
+        <h3 class="h3 text-center mb-5 pt-5">Recently Added</h3>
 
             <!-- Search form -->
-
 
                   <div class="row">
                       <!--Subheading-->

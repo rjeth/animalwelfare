@@ -102,7 +102,7 @@
                                 </div>
                             <?php } ?></span>
 
-                                    <input type="text" id="username"  name="username" class="form-control mb-4" placeholder="E-mail">
+                                    <input type="text" id="username"  name="username" class="form-control mb-4" placeholder="Username">
 
                                     <input type="password"  id="password" name="password" class="form-control mb-4" placeholder="Password">
 

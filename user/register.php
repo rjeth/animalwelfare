@@ -51,7 +51,7 @@ include("../layout/head.php");
       background-size: cover;
     }
 
-    
+
 
 
     .card {
@@ -130,56 +130,57 @@ include("../layout/head.php");
                               minima assumenda deleniti hic.</p>
                           </div>
                         </div>
-                        <!--Grid row-->
-
                       </div>
-                      <!--Grid column-->
-
-                      <!--Grid column-->
                       <div class="col-md-5">
-
-                        <!--/Grid row-->
-
-                        <!--Body-->
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                          <div class="form-group">
+                              <label for="replyFormComment">Username:</label>
+                              <input type="text" class="form-control" id="replyFormComment" required></input>
+                          </div>
+                          <div class="form-group">
+                              <label for="replyFormComment">Firstname:</label>
+                              <input type="text" class="form-control" id="replyFormComment" required></input>
+                          </div>
+                          <div class="form-group">
+                              <label for="replyFormComment">Lastname:</label>
+                              <input type="text" class="form-control" id="replyFormComment" required></input>
+                          </div>
+                          <div class="form-group">
+                            <label for="select">Gender</label>
+                            <select class="browser-default custom-select" id="select">
+                              <option value="" disabled="" selected="">Choose your option</option>
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="replyFormComment">Password:</label>
+                              <input type="password" class="form-control" id="replyFormComment" aria-describedby="defaultRegisterFormPhoneHelpBlock" required></input>
+                          </div>
 
+                          <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4" required>Minimal 8 characters lenght</small>
 
-                          <input type="text" name="name" class="form-control" placeholder="full name"  />
-
-                          <input type="email" name="email" class="form-control mb-4" placeholder="E-mail" >
-
-                          <input type="password"  name="password" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-
-                          <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Minimal 8 characters lenght</small>
-
-                          <input type="text" name="contact" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-
-                          <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small>
-
+                          <div class="form-group">
+                              <label for="replyFormComment">Phone number:</label>
+                              <input type="password" class="form-control" id="replyFormComment" aria-describedby="defaultRegisterFormPhoneHelpBlock" required></input>
+                          </div>
                           <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
-
                         </form>
-
                       </div>
                       <!--Grid column-->
-
                     </div>
                     <!--Grid row-->
-
                   </div>
                 </div>
 
               </div>
               <!--Grid column-->
-
             </div>
             <!--Grid row-->
-
           </div>
         </div>
     </section>
     <!--Intro Section-->
-
   </header>
   <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
