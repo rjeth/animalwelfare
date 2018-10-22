@@ -69,7 +69,6 @@
             <!-- Search form -->
                   <div class="row">
                       <!--Subheading-->
-
                       <div class="col-md-4 mb-4">
                           <!--Subheading-->
                           <!--Section: Live preview-->
@@ -98,7 +97,6 @@
                                           <div>
                                             <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">age</p>
                                             <label id="location">dignissimos ducimus</label>
-
                                         </div>
                                       </div>
                                       <hr>
@@ -107,27 +105,17 @@
                                   </div>
                                   <!--/.Card content-->
                               </div>
-                              <!--/.Card Light-->
-
+                          <!--/.Card Light-->
                           </section>
-                          <!--Section: Live preview-->
-
                       </div>
-
+                      
                   </div>
-
               </section>
       <!--Section: Main features & Quick Start-->
-
-
-
-      <hr class="mb-5">
-
+    <hr class="mb-5">
+  <!--Section: More-->
       <!--Section: More-->
-
-      <!--Section: More-->
-
-    </div>
+  </div>
   </main>
   <!--Main layout-->
 
