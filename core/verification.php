@@ -7,7 +7,7 @@ session_start();
 
 // check if users already logged in
 if(isset($_SESSION['user_id'])) {
-    header('location:../user/home/blog.php');
+    header('location:../user/home/home.php');
     exit();
 }
 
@@ -38,7 +38,7 @@ if( !empty($_POST) ) {
                 $_SESSION['logged_in'] = true;
                 $_SESSION['user_id'] = $result['user_id'];
 
-                header('location:../user/home/blog.php');
+                header('location:../user/home/home.php');
                 exit();
             }
             else {

@@ -69,7 +69,6 @@
             <!-- Search form -->
                   <div class="row">
                       <!--Subheading-->
-
                       <div class="col-md-4 mb-4">
                           <!--Subheading-->
                           <!--Section: Live preview-->
@@ -87,7 +86,7 @@
                                   <!--Card content-->
                                   <div class="card-body">
                                       <h4 class="card-title">Pet name </h4>
-                                  
+
                                       <!--Text-->
                                       <div class="card-text">
                                         <div >
@@ -98,36 +97,25 @@
                                           <div>
                                             <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">age</p>
                                             <label id="location">dignissimos ducimus</label>
-
                                         </div>
                                       </div>
                                       <hr>
-                                      <a class="link-text">
+                                      <a class="link-text" href="view_pet_info.php">
                                         <h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
                                   </div>
                                   <!--/.Card content-->
                               </div>
-                              <!--/.Card Light-->
-
+                          <!--/.Card Light-->
                           </section>
-                          <!--Section: Live preview-->
-
                       </div>
-
+                      
                   </div>
-
               </section>
       <!--Section: Main features & Quick Start-->
-
-
-
-      <hr class="mb-5">
-
+    <hr class="mb-5">
+  <!--Section: More-->
       <!--Section: More-->
-
-      <!--Section: More-->
-
-    </div>
+  </div>
   </main>
   <!--Main layout-->
 

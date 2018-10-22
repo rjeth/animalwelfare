@@ -14,6 +14,13 @@
   <link href="../../assets/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="../../assets/css/style.min.css" rel="stylesheet">
+  <script type="text/javascript" src="../../assets/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../../assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../../assets/js/mdb.min.js"></script>
 
 
 </head>
@@ -23,7 +30,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="../../home/index.php">
+      <a class="navbar-brand" href="../home/home.php">
         <strong>ANIMAL WELFARE</strong>
       </a>
 
@@ -39,7 +46,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../home/blog.php">Home
+            <a class="nav-link" href="../home/home.php">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -50,7 +57,7 @@
             <a class="nav-link" href="../inbox/inbox.php">Inbox</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../settings/setting.php">Settings</a>
+            <a class="nav-link" href="../settings/account_info.php">Settings</a>
           </li>
         </ul>
 

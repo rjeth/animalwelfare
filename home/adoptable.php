@@ -103,35 +103,49 @@
                                         </div>
                                       </div>
                                       <hr>
-                                      <a class="link-text">
+                                      <a data-toggle="modal" data-target="#exampleModalCenter">
                                         <h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
                                   </div>
                                   <!--/.Card content-->
                               </div>
                               <!--/.Card Light-->
-
                           </section>
                           <!--Section: Live preview-->
-
                       </div>
                   </div>
-
               </section>
-      <!--Section: Main features & Quick Start-->
-
-
-
       <hr class="mb-5">
-
-      <!--Section: More-->
-
-      <!--Section: More-->
 
     </div>
   </main>
   <!--Main layout-->
 
   <!--Footer-->
+  <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</h2>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-secondary" href="../user/login.php">Login</a>
+                <a class="btn btn-primary" href="../user/register.php">Sign up</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <?php include("../layout/foot.php"); ?>

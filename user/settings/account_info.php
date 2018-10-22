@@ -12,16 +12,11 @@
                 <div class="card mb-4 wow fadeIn">
                           <!--Card content-->
                           <div class="card-body">
-
                               <div class="media d-block d-md-flex mt-3">
-                                  <?php include("side_settings.php"); ?>
+                                      <?php include("side_settings.php"); ?>
                               </div>
-
                           </div>
-
                       </div>
-
-
               </div>
 
                 <!--Grid column-->
@@ -30,24 +25,28 @@
                     <!--Featured Image-->
 
                     <div class="card mb-3 wow fadeIn">
-                        <div class="card-header font-weight-bold">INFO</div>
+                        <div class="card-header font-weight-bold">Profile</div>
                         <div class="card-body">
 
                             <!-- Default form reply -->
                             <form>
-
-                                <div class="form-group">
-                                    <label for="replyFormComment">Current Password</label>
-                                    <input type="text" class="form-control" id="replyFormComment" rows="5"></input>
+                              <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">image</span>
                                 </div>
-                                <div class="form-group">
-                                    <label for="replyFormComment">New Password</label>
-                                    <input type="text" class="form-control" id="replyFormComment" rows="5"></input>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+                                  <label class="custom-file-label" for="fileInput">File Label</label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="replyFormComment">REtype Password</label>
-                                    <input type="text" class="form-control" id="replyFormComment" rows="5"></input>
-                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="replyFormComment">Username:</label>
+                                  <input type="text" class="form-control" id="replyFormComment" ></input>
+                              </div>
+                              <div class="form-group">
+                                  <label for="replyFormComment">Bios</label>
+                                  <textarea type="text" class="form-control" id="replyFormComment" rows="5"></textarea>
+                              </div>
 
 
                                 <div class="text-right mt-4">

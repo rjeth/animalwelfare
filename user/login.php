@@ -6,15 +6,7 @@
             background: url("https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg")no-repeat center center;
             background-size: cover;
         }
-        .top-nav-collapse {
-            background-color: #3f51b5 !important;
-        }
 
-        @media (max-width: 768px) {
-            .navbar:not(.top-nav-collapse) {
-                background: #3f51b5 !important;
-            }
-        }
 
         .card {
             background-color: rgba(229, 228, 255, 0.2);

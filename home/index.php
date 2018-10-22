@@ -59,7 +59,7 @@
                 <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
                   available. Create your own, stunning website.</strong>
               </p>
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start Adopting Now
+              <a href="../user/register.php" class="btn btn-outline-white btn-lg">Start Adopting Now
                 <i class="fa fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -87,7 +87,7 @@
                 <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
                   available. Create your own, stunning website.</strong>
               </p>
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
+              <a href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
                 <i class="fa fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -119,7 +119,7 @@
                   available. Create your own, stunning website.</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
+              <a href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
                 <i class="fa fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -150,12 +150,12 @@
   <main>
     <div class="container">
       <!--Section: Main info-->
-
+  <hr>
       <!--Section: Main features & Quick Start-->
       <section class="mb-5">
-        <div class="text-center">
-            <h2 class="font-weight-bold mt-lg-5 mb-5 pb-4"><strong>Recently Adopted</strong></h2>
-          </div>
+
+        <h3 class="h3 text-center mb-5">Recently Added</h3>
+
             <!-- Search form -->
 
 
@@ -199,13 +199,9 @@
                                   <!--/.Card content-->
                               </div>
                               <!--/.Card Light-->
-
                           </section>
                           <!--Section: Live preview-->
-
                       </div>
-
-
                   </div>
 
               </section>

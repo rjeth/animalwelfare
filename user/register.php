@@ -1,8 +1,6 @@
-
+<?php include("../core/verification.php");?>
 <?php
-require_once 'core/init.php';
-include 'layout/head.php';
-include 'core/sign_up.php';
+include("../layout/head.php");
  ?>
 <style>
     html,
@@ -53,21 +51,7 @@ include 'core/sign_up.php';
       background-size: cover;
     }
 
-    .top-nav-collapse {
-      background-color: #3f51b5 !important;
-    }
-
-
-    @media (max-width: 768px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #3f51b5 !important;
-      }
-    }
-    @media (min-width: 800px) and (max-width: 850px) {
-        .navbar:not(.top-nav-collapse) {
-            background: #3f51b5!important;
-        }
-    }
+    
 
 
     .card {
@@ -98,22 +82,18 @@ include 'core/sign_up.php';
 
               <!--Grid column-->
               <div class="col-md-12">
-
                 <div class="card">
                   <div class="card-body">
 
                     <h2 class="font-weight-bold my-4 text-center mb-5 mt-4 font-weight-bold">
                       <strong>REGISTER</strong>
                     </h2>
-                    <hr>
 
-                    <!--Grid row-->
                     <div class="row mt-5">
 
                       <!--Grid column-->
                       <div class="col-md-6 ml-lg-5 ml-md-3">
 
-                        <!--Grid row-->
                         <div class="row pb-4">
                           <div class="col-2 col-lg-1">
                             <i class="fa fa-bank indigo-text fa-lg"></i>
@@ -126,9 +106,6 @@ include 'core/sign_up.php';
                               minima assumenda deleniti hic.</p>
                           </div>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row pb-4">
                           <div class="col-2 col-lg-1">
                             <i class="fa fa-desktop deep-purple-text fa-lg"></i>
@@ -141,9 +118,6 @@ include 'core/sign_up.php';
                               minima assumenda deleniti hic.</p>
                           </div>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row pb-4">
                           <div class="col-2 col-lg-1">
                             <i class="fa fa-money purple-text fa-lg"></i>
