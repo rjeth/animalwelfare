@@ -87,7 +87,7 @@
                                   <!--Card content-->
                                   <div class="card-body">
                                       <h4 class="card-title">Pet name </h4>
-                                  
+
                                       <!--Text-->
                                       <div class="card-text">
                                         <div >
@@ -102,7 +102,7 @@
                                         </div>
                                       </div>
                                       <hr>
-                                      <a class="link-text">
+                                      <a class="link-text" href="view_pet_info.php">
                                         <h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
                                   </div>
                                   <!--/.Card content-->

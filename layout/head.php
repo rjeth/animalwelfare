@@ -61,8 +61,17 @@
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a href="../user/login.php" class="nav-link border border-light rounded waves-effect waves-light"
-             >
+            <a href="../user/register.php" class="nav-link border border-light rounded waves-effect waves-light">
+              <i class="fa fa-github mr-2"></i>Sign up
+            </a>
+          </li>
+
+        <div style="margin:5px" class="text-white">
+          or
+        </div>
+
+          <li class="nav-item">
+            <a href="../user/login.php" class="nav-link border border-light rounded waves-effect waves-light">
               <i class="fa fa-github mr-2"></i>Login
             </a>
           </li>

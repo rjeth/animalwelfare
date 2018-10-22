@@ -30,20 +30,7 @@
 
                             <!-- Default form reply -->
                             <form>
-                              <div class="input-group mb-4">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text">Profile pic</span>
-                                </div>
-                                <div class="custom-file">
-                                  <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
-                                  <label class="custom-file-label" for="fileInput">File Label</label>
-                                </div>
-                              </div>
-                                <!-- Comment -->
-                                <div class="form-group">
-                                    <label for="replyFormComment">Username:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" ></input>
-                                </div>
+
                                 <div class="form-group">
                                     <label for="replyFormComment">Fullname:</label>
                                     <input type="text" class="form-control" id="replyFormComment" ></input>
@@ -68,10 +55,7 @@
                                     <label for="replyFormComment">Location:</label>
                                     <input type="text" class="form-control" id="replyFormComment" ></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for="replyFormComment">Bios</label>
-                                    <textarea type="text" class="form-control" id="replyFormComment" rows="5"></textarea>
-                                </div>
+
 
                                 <div class="text-right mt-4">
                                     <button class="btn btn-info btn-md" type="submit">Update</button>

@@ -150,12 +150,12 @@
   <main>
     <div class="container">
       <!--Section: Main info-->
-
+  <hr>
       <!--Section: Main features & Quick Start-->
       <section class="mb-5">
-        <div class="text-center">
-            <h2 class="font-weight-bold mt-lg-5 mb-5 pb-4"><strong>Recently Adopted</strong></h2>
-          </div>
+
+        <h3 class="h3 text-center mb-5">Recently Added</h3>
+
             <!-- Search form -->
 
 

@@ -51,21 +51,7 @@ include("../layout/head.php");
       background-size: cover;
     }
 
-    .top-nav-collapse {
-      background-color: #3f51b5 !important;
-    }
-
-
-    @media (max-width: 768px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #3f51b5 !important;
-      }
-    }
-    @media (min-width: 800px) and (max-width: 850px) {
-        .navbar:not(.top-nav-collapse) {
-            background: #3f51b5!important;
-        }
-    }
+    
 
 
     .card {
@@ -103,14 +89,11 @@ include("../layout/head.php");
                       <strong>REGISTER</strong>
                     </h2>
 
-
-                    <!--Grid row-->
                     <div class="row mt-5">
 
                       <!--Grid column-->
                       <div class="col-md-6 ml-lg-5 ml-md-3">
 
-                        <!--Grid row-->
                         <div class="row pb-4">
                           <div class="col-2 col-lg-1">
                             <i class="fa fa-bank indigo-text fa-lg"></i>
@@ -123,9 +106,6 @@ include("../layout/head.php");
                               minima assumenda deleniti hic.</p>
                           </div>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row pb-4">
                           <div class="col-2 col-lg-1">
                             <i class="fa fa-desktop deep-purple-text fa-lg"></i>
@@ -138,9 +118,6 @@ include("../layout/head.php");
                               minima assumenda deleniti hic.</p>
                           </div>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row pb-4">
                           <div class="col-2 col-lg-1">
                             <i class="fa fa-money purple-text fa-lg"></i>
