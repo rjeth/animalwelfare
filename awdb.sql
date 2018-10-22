@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2018 at 03:49 PM
+-- Generation Time: Oct 22, 2018 at 04:01 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -144,7 +144,10 @@ INSERT INTO `tbl_userfeedback` (`id`, `message`, `date`, `user`, `subject`, `dat
 CREATE TABLE `user_tbl` (
   `user_id` int(20) NOT NULL,
   `username` varchar(100) NOT NULL,
-  `Name` varchar(50) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `middlename` varchar(50) NOT NULL,
+  `suffix` varchar(50) NOT NULL,
   `email_address` varchar(100) NOT NULL,
   `gender` varchar(225) NOT NULL,
   `password` varchar(100) NOT NULL,
@@ -159,14 +162,8 @@ CREATE TABLE `user_tbl` (
 -- Dumping data for table `user_tbl`
 --
 
-INSERT INTO `user_tbl` (`user_id`, `username`, `Name`, `email_address`, `gender`, `password`, `contact_number`, `address`, `state`, `user_type`, `user_image`) VALUES
-(3, 'crimson', 'frances reformado', 'reformado3@gmail.com', '', '1234567890', '0938471327', 'Talipapa', 'active', 'user', '38434476_2172077626360351_4424693965677133824_n.jpg'),
-(4, 'mado', 'Frances', 'reformado@gmail.coom', '', 'francis', '098837413', 'Caloocan City', 'active', 'admin', 'download.jpg'),
-(5, 'unknown', 'unknown', 'erhdfhjdhjf@gmail.com', '', 'zxcvbnm', '09013948873', 'dkfjdjfhjd', 'inactive', 'user', ''),
-(6, 'Brybry', 'Bryan Alonzo', 'bryanalonzo@gmail.com', '', 'qwerty', '09491445889', 'Quezon City', 'inactive', 'user', ''),
-(7, 'qwerty', 'ejdkfjdkdjk', 'erkjfkdjkdj@gmail.com', '', '1234567890', '09289893348', 'sdksjhdjhsjd', 'inactive', 'user', ''),
-(8, 'testlang', 'Hello World', 'test@gmail.com', '', 'password123', '00000000000', 'test lang', '', 'user', 'default.jpg'),
-(9, 'hello', 'Hello Worlds', 'testlang@gmail.com', 'Male', 'hmm', '00000000', 'test', '', 'user', 'default.jpg');
+INSERT INTO `user_tbl` (`user_id`, `username`, `firstname`, `lastname`, `middlename`, `suffix`, `email_address`, `gender`, `password`, `contact_number`, `address`, `state`, `user_type`, `user_image`) VALUES
+(4, 'mado', 'Frances', '', '', '', 'reformado@gmail.coom', '', 'francis', '098837413', 'Caloocan City', 'active', 'admin', 'download.jpg');
 
 --
 -- Indexes for dumped tables
