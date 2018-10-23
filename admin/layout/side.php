@@ -11,9 +11,28 @@
       <span>User management</span>
     </a>
     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-      <a class="dropdown-item" href="login.html">Add Borrower</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="../user_management">View Management</a>
+      <a class="dropdown-item" href="login.html">Active Accounts</a>
+      <a class="dropdown-item" href="../user_management">Blocked Accounts</a>
+    </div>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Maintenance</span>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+      <a class="dropdown-item" href="login.html">Location</a>
+      <a class="dropdown-item" href="../user_management">Category</a>
+    </div>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Settings</span>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+      <a class="dropdown-item" href="login.html">Profile</a>
+      <a class="dropdown-item" href="../user_management">Change Password</a>
     </div>
   </li>
 </ul>

@@ -33,7 +33,8 @@
                           $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
                           while( $record = mysqli_fetch_assoc($resultset) ) {
                           ?>
-                            <form>
+                            <form method="post" action="update_settings.php">
+                              <input type="hidden" class="form-control" id="id_user" name="id_user" value="<?php echo $record['username']; ?>"></input>
                               <div class="input-group mb-4">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text">image</span>
@@ -45,29 +46,29 @@
                               </div>
                               <div class="form-group">
                                   <label for="replyFormComment">Username:</label>
-                                  <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['username']; ?>"></input>
+                                  <input type="text" class="form-control" id="username" name="username" value="<?php echo $record['username']; ?>"></input>
                               </div>
                               <div class="form-group">
                                   <label for="replyFormComment">Bios</label>
-                                  <textarea type="text" class="form-control" id="replyFormComment" rows="5"></textarea>
+                                  <textarea type="text" class="form-control" id="bios" name="bios" rows="5"></textarea>
                               </div>
 
                               <hr class="mt-10">
                                 <div class="form-group">
                                     <label for="replyFormComment">Firstname:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['firstname']; ?>"></input>
+                                    <input type="text" class="form-control" id="firstname" name="firstname" value="<?php echo $record['firstname']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Lastname:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['lastname']; ?>"></input>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" value="<?php echo $record['lastname']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Middlename:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['middlename']; ?>"></input>
+                                    <input type="text" class="form-control" id="middlename" name="middlename"value="<?php echo $record['middlename']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Suffix:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['suffix']; ?>"></input>
+                                    <input type="text" class="form-control" id="suffix" name="suffix" value="<?php echo $record['suffix']; ?>"></input>
                                 </div>
 
                                   <div class="form-group">
@@ -106,17 +107,16 @@
 
                                 <div class="form-group">
                                     <label for="replyFormComment">Email Address:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['email_address']; ?>"></input>
+                                    <input type="text" class="form-control" id="email" name="email" value="<?php echo $record['email_address']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Contact no:</label>
-                                    <input type="text" class="form-control" id="replyFormComment"  value="<?php echo $record['contact_number']; ?>"></input>
+                                    <input type="text" class="form-control" id="contact" name="contact" value="<?php echo $record['contact_number']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Location:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['address']; ?>" ></input>
+                                    <input type="text" class="form-control" id="location" name="location" value="<?php echo $record['address']; ?>" ></input>
                                 </div>
-
 
                                 <div class="text-right mt-4">
                                     <button class="btn btn-info btn-md" type="submit">Update</button>
