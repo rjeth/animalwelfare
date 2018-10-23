@@ -63,16 +63,17 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Middlename:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['Middlename']; ?>"></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['middlename']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Suffix:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['Suffix']; ?>"></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['suffix']; ?>"></input>
                                 </div>
-                                <?php if ($record['gender'] == 'Male'){ ?>
+
                                   <div class="form-group">
                                       <label for="gen">Gender</label>
                                       <div class="row">
+                                        <?php if ($record['gender'] == 'Male'){ ?>
                                         <div class="custom-control custom-radio">
                                             <input class="control-input" type="radio" name="gender"  value="Female">
                                             <label class="control-label" for="gender">
@@ -85,27 +86,23 @@
                                               Male
                                             </label>
                                           </div>
+                                        <?php }else {?>
+                                      <div class="custom-control custom-radio">
+                                              <input class="control-input" type="radio" name="gender"  value="Female" checked>
+                                              <label class="control-label" for="gender">
+                                                Female
+                                              </label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                              <input class="control-input" type="radio" name="gender"  value="Male" >
+                                              <label class="control-label" for="gender">
+                                                Male
+                                              </label>
+                                            </div>
+                                      <?php  } ?>
                                       </div>
                                 </div>
-                                <?php }else{?>
-                                  <div class="form-group">
-                                      <label for="gen">Gender</label>
-                                      <div class="row">
-                                        <div class="custom-control custom-radio">
-                                            <input class="control-input" type="radio" name="gender"  value="Female" checked>
-                                            <label class="control-label" for="gender">
-                                              Female
-                                            </label>
-                                          </div>
-                                          <div class="custom-control custom-radio">
-                                            <input class="control-input" type="radio" name="gender"  value="Male" >
-                                            <label class="control-label" for="gender">
-                                              Male
-                                            </label>
-                                          </div>
-                                      </div>
-                                </div>
-                                <?php }?>
+
 
                                 <div class="form-group">
                                     <label for="replyFormComment">Email Address:</label>
