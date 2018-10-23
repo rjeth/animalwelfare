@@ -3,16 +3,16 @@
 <?php include("../../layout/head2.php"); ?>
 <main class="mt-5 pt-5 pb-5">
     <div class="container">
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
         <!--Section: Post-->
         <section class="mt-4">
 
-          <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </div>
+
             <div class="row">
               <div class="col-md-4 mb-4">
                 <div class="card mb-4 wow fadeIn">
