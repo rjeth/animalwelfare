@@ -301,6 +301,6 @@
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
-  
+
       <!-- /.content-wrapper -->
 <?php include("../layout/foot.php"); ?>

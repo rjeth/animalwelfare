@@ -11,8 +11,8 @@
       <span>User management</span>
     </a>
     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-      <a class="dropdown-item" href="login.html">Active Accounts</a>
-      <a class="dropdown-item" href="../user_management">Blocked Accounts</a>
+      <a class="dropdown-item" href="../active">Active Accounts</a>
+      <a class="dropdown-item" href="../blocked">Blocked Accounts</a>
     </div>
   </li>
   <li class="nav-item dropdown">

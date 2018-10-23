@@ -8,7 +8,6 @@ if($_POST) {
 	$mname = $_POST['middlename'];
 	$suffix = $_POST['suffix'];
 	$gender = $_POST['gender'];
-	$age = $_POST['age'];
 	$email = $_POST['email'];
 	$contact = $_POST['contact'];
 	$location = $_POST['location'];
