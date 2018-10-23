@@ -5,7 +5,6 @@
     <div class="container">
         <!--Section: Post-->
         <section class="mt-4">
-
             <!--Grid row-->
             <div class="row">
               <div class="col-md-4 mb-4">
@@ -18,12 +17,9 @@
                           </div>
                       </div>
               </div>
-
                 <!--Grid column-->
                 <div class="col-md-8 mb-4">
-
                     <!--Featured Image-->
-
                     <div class="card mb-3 wow fadeIn">
                         <div class="card-header font-weight-bold">Documents</div>
                         <div class="card-body">
@@ -46,21 +42,13 @@
                                 </div>
                             </form>
                             <!-- Default form reply -->
-
-
-
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
             <!--Grid row-->
-
         </section>
         <!--Section: Post-->
-
     </div>
 </main>
 

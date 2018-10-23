@@ -57,7 +57,7 @@
             <a class="nav-link" href="../inbox/inbox.php">Inbox</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../settings/account_info.php">Settings</a>
+            <a class="nav-link" href="../settings/setting.php">Settings</a>
           </li>
         </ul>
 
