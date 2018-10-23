@@ -29,7 +29,6 @@
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Upload</button>
                       </div>
                   </div>
-
                     <div class="card mb-4 wow fadeIn">
                       <!--Card content-->
                         <div class="card-body">
@@ -71,6 +70,8 @@
         </button>
       </div>
       <div class="modal-body">
+
+
         <form>
           <div class="input-group mb-4">
             <div class="input-group-prepend">

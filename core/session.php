@@ -18,7 +18,6 @@ $user_id = $_SESSION['user_id'];
 $sql = "SELECT * FROM user_tbl WHERE user_id = $user_id";
 $query = $connect->query($sql);
 $result = $query->fetch_array();
-
 // close database connection
 //$connect->close();
 }

@@ -74,9 +74,6 @@
         }
 
     </style>
-
-
-
     <!--Main Navigation-->
     <header>
         <!--Intro Section-->

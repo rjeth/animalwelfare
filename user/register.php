@@ -65,14 +65,7 @@ include("../layout/head.php");
 
 </head>
 
-
-  <!--Main Navigation-->
   <header>
-
-    <!-- Navbar -->
-    <!-- Navbar -->
-
-    <!--Intro Section-->
     <section class="view intro-2">
         <div class="mask rgba-gradient">
           <div class="container h-100 d-flex justify-content-center align-items-center">
@@ -132,39 +125,52 @@ include("../layout/head.php");
                         </div>
                       </div>
                       <div class="col-md-5">
-                        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                        <form action="actions/registration.php" method="POST">
                           <div class="form-group">
                               <label for="replyFormComment">Username:</label>
-                              <input type="text" class="form-control" id="replyFormComment" required></input>
+                              <input type="text" class="form-control" id="username" name="username" required></input>
                           </div>
                           <div class="form-group">
                               <label for="replyFormComment">Firstname:</label>
-                              <input type="text" class="form-control" id="replyFormComment" required></input>
+                              <input type="text" class="form-control" id="fname" name="fname" required></input>
                           </div>
                           <div class="form-group">
                               <label for="replyFormComment">Lastname:</label>
-                              <input type="text" class="form-control" id="replyFormComment" required></input>
+                              <input type="text" class="form-control" id="lname" name="lname" required></input>
                           </div>
                           <div class="form-group">
-                            <label for="select">Gender</label>
-                            <select class="browser-default custom-select" id="select">
+                              <label for="replyFormComment">Middlename:</label>
+                              <input type="text" class="form-control" id="mname" name="mname" required></input>
+                          </div>
+                          <div class="form-group">
+                              <label for="replyFormComment">Email Address:</label>
+                              <input type="email" class="form-control" id="email" name="email" aria-describedby="defaultRegisterFormPhoneHelpBlock" required></input>
+                          </div>
+                          <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="browser-default custom-select" id="gender" name="gender">
                               <option value="" disabled="" selected="">Choose your option</option>
                               <option value="1">Male</option>
                               <option value="2">Female</option>
                             </select>
                           </div>
                           <div class="form-group">
+                            <label for="location">Location</label>
+                            <select class="browser-default custom-select" id="location" name="location">
+                              <option value="" disabled="" selected="">Choose your option</option>
+                              <option value="1">Quezon City</option>
+
+                            </select>
+                          </div>
+                          <div class="form-group">
                               <label for="replyFormComment">Password:</label>
-                              <input type="password" class="form-control" id="replyFormComment" aria-describedby="defaultRegisterFormPhoneHelpBlock" required></input>
+                              <input type="password" class="form-control" id="password" name="password" aria-describedby="defaultRegisterFormPhoneHelpBlock" required></input>
                           </div>
 
                           <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4" required>Minimal 8 characters lenght</small>
 
-                          <div class="form-group">
-                              <label for="replyFormComment">Phone number:</label>
-                              <input type="password" class="form-control" id="replyFormComment" aria-describedby="defaultRegisterFormPhoneHelpBlock" required></input>
-                          </div>
-                          <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
+
+                          <input class="btn btn-info my-4 btn-block" type="submit" name="submit" value="Sign up"></input>
                         </form>
                       </div>
                       <!--Grid column-->
