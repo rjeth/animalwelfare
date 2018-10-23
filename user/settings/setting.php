@@ -27,8 +27,12 @@
                     <div class="card mb-3 wow fadeIn">
                         <div class="card-header font-weight-bold">INFO</div>
                         <div class="card-body">
-
-                            <!-- Default form reply -->
+                          <?php
+                          include_once("../../core/config.php");
+                          $sql = "SELECT * FROM user_tbl WHERE user_id = $user";
+                          $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                          while( $record = mysqli_fetch_assoc($resultset) ) {
+                          ?>
                             <form>
                               <div class="input-group mb-4">
                                 <div class="input-group-prepend">
@@ -41,7 +45,7 @@
                               </div>
                               <div class="form-group">
                                   <label for="replyFormComment">Username:</label>
-                                  <input type="text" class="form-control" id="replyFormComment" ></input>
+                                  <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['username']; ?>"></input>
                               </div>
                               <div class="form-group">
                                   <label for="replyFormComment">Bios</label>
@@ -51,39 +55,69 @@
                               <hr class="mt-10">
                                 <div class="form-group">
                                     <label for="replyFormComment">Firstname:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['firstname']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Lastname:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['lastname']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Middlename:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['Middlename']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Suffix:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['Suffix']; ?>"></input>
                                 </div>
-                                <div class="form-group">
-                                  <label for="select">Default select</label>
-                                  <select class="browser-default custom-select" id="select">
-                                    <option value="" disabled="" selected="">Choose your option</option>
-                                    <option value="1">Male</option>
-                                    <option value="2">Female</option>
-                                  </select>
+                                <?php if ($record['gender'] == 'Male'){ ?>
+                                  <div class="form-group">
+                                      <label for="gen">Gender</label>
+                                      <div class="row">
+                                        <div class="custom-control custom-radio">
+                                            <input class="control-input" type="radio" name="gender"  value="Female">
+                                            <label class="control-label" for="gender">
+                                              Female
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-radio">
+                                            <input class="control-input" type="radio" name="gender"  value="Male" checked>
+                                            <label class="control-label" for="gender">
+                                              Male
+                                            </label>
+                                          </div>
+                                      </div>
                                 </div>
+                                <?php }else{?>
+                                  <div class="form-group">
+                                      <label for="gen">Gender</label>
+                                      <div class="row">
+                                        <div class="custom-control custom-radio">
+                                            <input class="control-input" type="radio" name="gender"  value="Female" checked>
+                                            <label class="control-label" for="gender">
+                                              Female
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-radio">
+                                            <input class="control-input" type="radio" name="gender"  value="Male" >
+                                            <label class="control-label" for="gender">
+                                              Male
+                                            </label>
+                                          </div>
+                                      </div>
+                                </div>
+                                <?php }?>
+
                                 <div class="form-group">
                                     <label for="replyFormComment">Email Address:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['email_address']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Contact no:</label>
-                                    <input type="text" class="form-control" id="replyFormComment"  limi></input>
+                                    <input type="text" class="form-control" id="replyFormComment"  value="<?php echo $record['contact_number']; ?>"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="replyFormComment">Location:</label>
-                                    <input type="text" class="form-control" id="replyFormComment" ></input>
+                                    <input type="text" class="form-control" id="replyFormComment" value="<?php echo $record['address']; ?>" ></input>
                                 </div>
 
 
@@ -91,6 +125,8 @@
                                     <button class="btn btn-info btn-md" type="submit">Update</button>
                                 </div>
                             </form>
+
+                          <?php } ?>
                             <!-- Default form reply -->
 
 
