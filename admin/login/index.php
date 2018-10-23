@@ -52,7 +52,6 @@
             <a class="btn btn-primary btn-block" href="../dashboard">Login</a>
           </form>
           <div class="text-center">
-            <a class="d-block small mt-3" href="../register">Register an Account</a>
             <a class="d-block small" href="../forgot">Forgot Password?</a>
           </div>
         </div>
