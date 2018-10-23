@@ -19,7 +19,7 @@ while( $record = mysqli_fetch_assoc($resultset) ) {
 
         <div>
             <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">Location</p>
-            <label id="location">dignissimos ducimus</label>
+            <label id="location"><?php echo $record['address']; ?></label>
 
         </div>
         <div>
