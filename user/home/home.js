@@ -42,6 +42,10 @@ function validType() {
     }
 }
 
+function validCategory() {
+
+}
+
 function validAge() {
     if ($('#pet_age').val() == '') {
         $('#pet_age').addClass('is-invalid');
@@ -68,12 +72,12 @@ function validDewormed() {
 }
 
 function validVacinated() {
-    var opt = $('#pet_vacinated option[disabled]:selected').val();
+    var opt = $('#pet_vaccinated option[disabled]:selected').val();
     if (opt == "Choose type") {
-        $('#pet_vacinated').addClass('is-invalid');
+        $('#pet_vaccinated').addClass('is-invalid');
         bool = false;
     } else {
-        $('#pet_vacinated').removeClass('is-invalid');
+        $('#pet_vaccinated').removeClass('is-invalid');
         bool = true;
     }
 }
