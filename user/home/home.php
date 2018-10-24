@@ -33,10 +33,10 @@
                           <span>About author</span>
                           <span style="float:right">
                               <a href="">
-                                  <i class="fa fa-facebook mr-2"></i>
+                                  Edit
                               </a>
                               <a href="">
-                                  <i class="fa fa-twitter mr-2"></i>
+                                Delete
                               </a>
                           </span>
                       </div>
