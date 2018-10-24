@@ -94,7 +94,7 @@ function validateAll() {
         $.ajax({
             url: 'upload.php',
             data:
-        })
+        });
     }
 }
 
