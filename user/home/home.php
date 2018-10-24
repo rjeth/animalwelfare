@@ -35,7 +35,7 @@
                   ?>
                     <div class="card mb-4 wow fadeIn">
                       <div class="card-header font-weight-bold">
-                          <h3 style="float:left"><?php echo $record['pet_status']; ?></h3>
+                          <h3 style="float:left" class="modal-title"><span class="badge red"><?php echo $record['pet_status']; ?></span></h3>
 
                           <span style="float:right">
                             <form class="form-inline my-1">
@@ -150,9 +150,9 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="select">Category</label>
-              <select class="browser-default custom-select" id="pet_category">
-                  <option selected="true" disabled="disabled">Choose type</option>
+            <label for="select">Breed</label>
+              <select class="browser-default custom-select" id="pet_category" name="pet_category">
+                  <option selected="true" disabled="disabled">Choose Breed</option>
                 <?php
                 include_once("../../core/config.php");
                 $sql = "SELECT * FROM pet_category";
