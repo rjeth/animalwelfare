@@ -43,31 +43,33 @@
 
                       <div class="card wow fadeIn thin">
                           <div class="card-body">
-
+                            <?php
+                            require_once '../../core/config.php';
+                            if($_GET['user_id']) {
+                                $id = $_GET['user_id'];
+                                $sql = "SELECT * FROM user_tbl WHERE user_id = {$id}";
+                                $result = $connect->query($sql);
+                                $data = $result->fetch_assoc();
+                                ?>
+                                <div class="form-group">
+                                    <label for="postForm">Subject</label>
+                                    <input class="form-control" id="pet_name" name="pet_name" type="text" value="<?php echo $data['username']?>"></input>
+                                    <div class="invalid-feedback">
+                                      Please input your pet name
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <textarea name="editor1"></textarea>
+                              </div>
+                              <?php } ?>
                           </div>
-                          <?php
-                          require_once '../../core/config.php';
-                          if($_GET['pet_id']) {
-                              $id = $_GET['pet_id'];
-                              $sql = "SELECT * FROM tbl_pets WHERE pet_id = {$id}";
-                              $result = $connect->query($sql);
-                              $data = $result->fetch_assoc();
-                              ?>
+
 
                           <div class="card-foot table-responsive">
-                            <div class="form-group">
-                                <label for="postForm">Subject</label>
-                                <input class="form-control" id="pet_name" name="pet_name" type="text"></input>
-                                <div class="invalid-feedback">
-                                  Please input your pet name
-                                </div>
-                            </div>
-                            <div class="form-group">
-                            <textarea name="editor1"></textarea>
-                          </div>
+
                                <button class="btn btn-info " style="float:right" type="submit">post</button>
                           </div>
-                        <?php } ?>
+
                       </div>
                   </div>
               </div>
