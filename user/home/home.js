@@ -121,8 +121,11 @@ function validateAll() {
             processData: false,
             success: function (data) {
                 swal('Uploaded Successfully', '', 'success', {
-                    closeOnClickOutside: false
-                });
+                        closeOnClickOutside: false
+                    })
+                    .then((value) => {
+                        location.reload();
+                    })
             }
         });
     }
