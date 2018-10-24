@@ -149,7 +149,6 @@
           <div class="form-group">
               <label for="gen">Gender</label>
               <div class="row">
-                <?php if ($record['gender'] == 'Male'){ ?>
                 <div class="custom-control custom-radio">
                     <input class="control-input" type="radio" name="gender"  value="Female">
                     <label class="control-label" for="gender">
@@ -157,25 +156,11 @@
                     </label>
                   </div>
                   <div class="custom-control custom-radio">
-                    <input class="control-input" type="radio" name="gender"  value="Male" checked>
+                    <input class="control-input" type="radio" name="gender"  value="Male" >
                     <label class="control-label" for="gender">
                       Male
                     </label>
                   </div>
-                <?php }else {?>
-              <div class="custom-control custom-radio">
-                      <input class="control-input" type="radio" name="gender"  value="Female" checked>
-                      <label class="control-label" for="gender">
-                        Female
-                      </label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input class="control-input" type="radio" name="gender"  value="Male" >
-                      <label class="control-label" for="gender">
-                        Male
-                      </label>
-                    </div>
-              <?php  } ?>
               </div>
         </div>
           <div class="form-group">
