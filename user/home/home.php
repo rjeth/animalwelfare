@@ -50,7 +50,12 @@
                           while( $record = mysqli_fetch_assoc($resultset) ) {
                           ?>
                           <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
+
                             <p class="h5 my-4"><?php echo $record['pet_name']; ?></p>
+
+                            <p class="mt-0 mb-1 text-muted" for="location">Status</p>
+                            <label id="location"><?php echo $record['pet_status']; ?></label>
+
                             <p class="mt-0 mb-1 text-muted" for="location">Age</p>
                             <label id="location"><?php echo $record['pet_age']; ?></label>
                             <p class="mt-0 mb-1 text-muted" for="location">Gender</p>
