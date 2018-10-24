@@ -12,16 +12,12 @@
                 <div class="card mb-4 wow fadeIn">
                           <!--Card content-->
                           <div class="card-body">
-
                               <div class="media d-block d-md-flex mt-3">
                                   <?php include("side_settings.php"); ?>
                               </div>
 
                           </div>
-
-                      </div>
-
-
+                  </div>
               </div>
 
                 <!--Grid column-->
@@ -48,26 +44,17 @@
                                     <label for="replyFormComment">re-type Password</label>
                                     <input type="password" class="form-control" id="current_pass" name="current_pass" ></input>
                                 </div>
-
-
                                 <div class="text-right mt-4">
                                     <button class="btn btn-info btn-md" type="submit">Update</button>
                                 </div>
                             </form>
                           <?php } ?>
                             <!-- Default form reply -->
-
-
-
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
             <!--Grid row-->
-
         </section>
         <!--Section: Post-->
 

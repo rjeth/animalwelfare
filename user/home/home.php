@@ -27,10 +27,15 @@
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#upload_pet">Upload</button>
                       </div>
                   </div>
-
+                  <?php
+                  include_once("../../core/config.php");
+                  $sql = "SELECT * FROM tbl_pets WHERE pet_id = 23";
+                  $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                  while( $record = mysqli_fetch_assoc($resultset) ) {
+                  ?>
                     <div class="card mb-4 wow fadeIn">
                       <div class="card-header font-weight-bold">
-                          <span style="float:left">That's a very long heading</span>
+                          <h3 style="float:left"><span class="badge red"><?php echo $record['pet_status']; ?></span></h3>
                           <span style="float:right">
                               <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#edit_pet">
                                   Edit
@@ -42,15 +47,10 @@
                           </span>
                       </div>
                       <div class="card-body">
-                        <?php
-                        include_once("../../core/config.php");
-                        $sql = "SELECT * FROM tbl_pets WHERE pet_id = 23";
-                        $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
-                        while( $record = mysqli_fetch_assoc($resultset) ) {
-                        ?>
+
                         <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
 
-                          <h1 class="my-4"><?php echo $record['pet_name']; ?> <span class="badge red"><?php echo $record['pet_status']; ?></span></h1>
+                          <h1 class="my-4"><?php echo $record['pet_name']; ?> </h1>
 
                           <p class="mt-0 mb-1 text-muted" for="location">Type</p>
                           <label id="location"><?php echo $record['pet_type']; ?></label>
@@ -140,6 +140,23 @@
             </div>
           </div>
           <div class="form-group">
+            <label for="select">Category</label>
+              <select class="browser-default custom-select" id="pet_category">
+                  <option selected="true" disabled="disabled">Choose type</option>
+                <?php
+                include_once("../../core/config.php");
+                $sql = "SELECT * FROM pet_category";
+                $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                while( $record = mysqli_fetch_assoc($resultset) ) {
+                ?>
+                <option value="<?php echo $record['category_name']; ?>"><?php echo $record['category_name']; ?></option>
+              <?php } ?>
+              </select>
+            <div class="invalid-feedback">
+                Please select
+            </div>
+          </div>
+          <div class="form-group">
               <label for="postForm">Age</label>
               <input class="form-control" name="pet_age" id="pet_age" type="number" rows="5" min="0"></input>
               <div class="invalid-feedback" id="pet_age_message">
@@ -182,6 +199,23 @@
               <option value="1">True</option>
               <option value="0">False</option>
             </select>
+            <div class="invalid-feedback">
+                Please select
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="select">Category</label>
+              <select class="browser-default custom-select" id="pet_category">
+                  <option selected="true" disabled="disabled">Choose type</option>
+                <?php
+                include_once("../../core/config.php");
+                $sql = "SELECT * FROM pet_category";
+                $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                while( $record = mysqli_fetch_assoc($resultset) ) {
+                ?>
+                <option value="<?php echo $record['category_name']; ?>"><?php echo $record['category_name']; ?></option>
+              <?php } ?>
+              </select>
             <div class="invalid-feedback">
                 Please select
             </div>
