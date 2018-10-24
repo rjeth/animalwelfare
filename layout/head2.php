@@ -7,7 +7,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>ANIMAL WELFARE</title>
   <!-- Font Awesome -->
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="../../assets/css/fontawesome/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +21,8 @@
   <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../../assets/js/mdb.min.js"></script>
+  <!-- Sweet Alert -->
+  <script type="text/javascript" src="../../assets/js/sweetalert.min.js"></script>
 
 
 </head>

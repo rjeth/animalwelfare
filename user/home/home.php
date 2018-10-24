@@ -70,54 +70,75 @@
       <div class="modal-body">
 
 
-        <form>
+        <form id="post_form" onsubmit="return Validate()">
           <div class="input-group mb-4">
             <div class="input-group-prepend">
               <span class="input-group-text">Image</span>
             </div>
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
               <label class="custom-file-label" for="fileInput">File Label</label>
+              <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+              <div class="invalid-feedback">
+                Image is required
+              </div>
             </div>
           </div>
           <div class="form-group">
               <label for="postForm">Pet name</label>
-              <input class="form-control" id="postForm" type="text" rows="5"></input>
+              <input class="form-control" id="pet_name" type="text" rows="5"></input>
+              <div class="invalid-feedback">
+                Please input your pet name
+              </div>
           </div>
           <div class="form-group">
             <label for="select">Type</label>
-            <select class="browser-default custom-select" id="select">
-              <option value="" disabled="" selected="">Choose type</option>
-              <option value="1">Dog</option>
-              <option value="2">Cat</option>
-              <option value="3">others</option>
-            </select>
+              <select class="browser-default custom-select" id="pet_type">
+                <option selected="true" disabled="disabled">Choose type</option>
+                <option value="1">Dog</option>
+                <option value="2">Cat</option>
+                <option value="3">others</option>
+              </select>
+            <div class="invalid-feedback">
+                Please select
+            </div>
           </div>
           <div class="form-group">
               <label for="postForm">Age</label>
-              <input class="form-control" id="postForm" type="number" rows="5"></input>
+              <input class="form-control" id="pet_age" type="number" rows="5" min="0"></input>
+              <div class="invalid-feedback" id="pet_age_message">
+                Please enter age
+              </div>
           </div>
           <div class="form-group">
             <label for="select">Dewormed</label>
-            <select class="browser-default custom-select" id="select">
-              <option value="" disabled="" selected="">Choose type</option>
+            <select class="browser-default custom-select" id="pet_dewormed">
+              <option selected="true" disabled="disabled">Choose type</option>
               <option value="1">True</option>
               <option value="2">False</option>
             </select>
+            <div class="invalid-feedback">
+                Please select
+            </div>
           </div>
           <div class="form-group">
             <label for="select">Vacinated</label>
-            <select class="browser-default custom-select" id="select">
-              <option value="" disabled="" selected="">Choose type</option>
+            <select class="browser-default custom-select" id="pet_vacinated">
+              <option selected="true" disabled="disabled">Choose type</option>
               <option value="1">True</option>
               <option value="2">False</option>
             </select>
+            <div class="invalid-feedback">
+                Please select
+            </div>
           </div>
 
             <!-- Comment -->
             <div class="form-group">
                 <label for="postForm">Description</label>
-                <textarea class="form-control" id="postForm" rows="5"></textarea>
+                <textarea class="form-control" id="pet_description" rows="5"></textarea>
+                <div class="invalid-feedback">
+                Description is required
+                </div>
             </div>
           </div>
       <div class="modal-footer">
@@ -128,6 +149,7 @@
     </div>
   </div>
 </div>
-
-
    <?php include("../../layout/foot.php"); ?>
+   <script>
+   <?php include('home.js'); ?>
+   </script>
