@@ -12,7 +12,7 @@ if($_POST) {
 	$contact = $_POST['contact'];
 	$location = $_POST['location'];
 	$id = $_POST['id_user'];
-	$sql = "UPDATE  user_tbl  SET  username = '$uname', firstname = '$fname', lastname = '$lname', middlename = '$mname', suffix = '$suffix', email_address = '$email', gender = '$gender', contact_number = '$contact', address = '$location', bio = '$bio' WHERE 'user_id' = '$id'";
+	$sql = "UPDATE  user_tbl  SET  username = '$uname', firstname = '$fname', lastname = '$lname', middlename = '$mname', suffix = '$suffix', email_address = '$email', gender = '$gender', contact_number = '$contact', address = '$location', bio = '$bio' WHERE user_id = '$id'";
 	if($connect->query($sql) === TRUE) {
 		echo "<p>Succcessfully Updated</p>";
        header('location:../settings/setting.php');
