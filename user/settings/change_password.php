@@ -32,21 +32,21 @@
                     <div class="card mb-3 wow fadeIn">
                         <div class="card-header font-weight-bold">INFO</div>
                         <div class="card-body">
-
-                            <!-- Default form reply -->
-                            <form>
-
-                                <div class="form-group">
-                                    <label for="replyFormComment">Current Password</label>
-                                    <input type="text" class="form-control" id="replyFormComment" rows="5"></input>
-                                </div>
+                          <?php
+                          include_once("../../core/config.php");
+                          $sql = "SELECT * FROM user_tbl WHERE user_id = $user";
+                          $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                          while( $record = mysqli_fetch_assoc($resultset) ) {
+                          ?>
+                            <form action="update_password.php" method="post">
+                              <input type="hidden" class="form-control" id="user_id" name="user_id"  value="<?php echo $record['user_id']; ?>"></input>
                                 <div class="form-group">
                                     <label for="replyFormComment">New Password</label>
-                                    <input type="text" class="form-control" id="replyFormComment" rows="5"></input>
+                                    <input type="password" class="form-control" id="new_pass" name="new_pass" ></input>
                                 </div>
                                 <div class="form-group">
-                                    <label for="replyFormComment">REtype Password</label>
-                                    <input type="text" class="form-control" id="replyFormComment" rows="5"></input>
+                                    <label for="replyFormComment">re-type Password</label>
+                                    <input type="password" class="form-control" id="current_pass" name="current_pass" ></input>
                                 </div>
 
 
@@ -54,6 +54,7 @@
                                     <button class="btn btn-info btn-md" type="submit">Update</button>
                                 </div>
                             </form>
+                          <?php } ?>
                             <!-- Default form reply -->
 
 
