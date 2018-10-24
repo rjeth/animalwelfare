@@ -28,11 +28,6 @@
                       </div>
                   </div>
                     <div class="card mb-4 wow fadeIn">
-                      <div class="card-header font-weight-bold">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
                       <!--Card content-->
                         <div class="card-body">
                             <p class="h5 my-4">That's a very long heading </p>
@@ -118,6 +113,7 @@
               <option value="2">False</option>
             </select>
           </div>
+
             <!-- Comment -->
             <div class="form-group">
                 <label for="postForm">Description</label>
