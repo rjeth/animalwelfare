@@ -37,34 +37,28 @@
                 </div>
 
                   <!--Grid column-->
-                  <div class="col-md-9 mb-4 example-1">
+                  <div class="col-md-9 mb-4">
 
                       <!--Featured Image-->
 
                       <div class="card wow fadeIn thin">
-                          <div class="card-body table-responsive">
-                            <table class="table table-sm">
-                              <thead class="grey lighten-2">
-                                <tr>
-                                  <th scope="col"></th>
-                                  <th scope="col" class="text-center">Sender</th>
-                                  <th scope="col" class="text-center">Subject</th>
-                                  <th scope="col" class="text-center">Datetime</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                    <td style="width:15%" class="text-center" ><a href=info_chat_box.php?id="3"><i class="fas fa-sign-out-alt"></i>Read</a></td>
-                                  <td style="width:20%" class="text-center">Mark</td>
-                                  <td style="width:50%" class="text-center">asdasdasdasdasdasdasdasdasdasdasdasdsdasdasdasdasd</td>
-                                  <td style="width:20%" class="text-center">@mdo</td>
-                                </tr>
+                          <div class="card-body">
 
-                              </tbody>
-                            </table>
+                          </div>
 
-                              <!-- Default form reply -->
 
+                          <div class="card-foot table-responsive">
+                            <div class="form-group">
+                                <label for="postForm">Subject</label>
+                                <input class="form-control" id="pet_name" name="pet_name" type="text"></input>
+                                <div class="invalid-feedback">
+                                  Please input your pet name
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <textarea name="editor1"></textarea>
+                          </div>
+                               <button class="btn btn-info " style="float:right" type="submit">post</button>
                           </div>
                       </div>
                   </div>
