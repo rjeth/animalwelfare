@@ -93,7 +93,15 @@ function validateAll() {
         var form = $('#vform').serialize();
         $.ajax({
             url: 'upload.php',
-            data:
+            method: 'POST',
+            data: form,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                swal('Uploaded Successfully', '', 'success', {
+                    closeOnClickOutside: false
+                });
+            }
         });
     }
 }

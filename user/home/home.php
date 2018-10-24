@@ -77,7 +77,7 @@
             </div>
             <div class="custom-file">
               <label class="custom-file-label" for="fileInput">File Label</label>
-              <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+              <input type="file" class="custom-file-input" name="fileInput" id="fileInput" aria-describedby="fileInput">
               <div class="invalid-feedback">
                 Image is required
               </div>
@@ -92,7 +92,7 @@
           </div>
           <div class="form-group">
             <label for="select">Type</label>
-              <select class="browser-default custom-select" id="pet_type">
+              <select class="browser-default custom-select"name="pet_type" id="pet_type">
                 <option selected="true" disabled="disabled">Choose type</option>
                 <option value="1">Dog</option>
                 <option value="2">Cat</option>
@@ -104,14 +104,14 @@
           </div>
           <div class="form-group">
               <label for="postForm">Age</label>
-              <input class="form-control" id="pet_age" type="number" rows="5" min="0"></input>
+              <input class="form-control"name="pet_age" id="pet_age" type="number" rows="5" min="0"></input>
               <div class="invalid-feedback" id="pet_age_message">
                 Please enter age
               </div>
           </div>
           <div class="form-group">
             <label for="select">Dewormed</label>
-            <select class="browser-default custom-select" id="pet_dewormed">
+            <select class="browser-default custom-select" name="pet_dewormed" id="pet_dewormed">
               <option selected="true" disabled="disabled">Choose type</option>
               <option value="1">True</option>
               <option value="2">False</option>
@@ -122,7 +122,7 @@
           </div>
           <div class="form-group">
             <label for="select">Vacinated</label>
-            <select class="browser-default custom-select" id="pet_vacinated">
+            <select class="browser-default custom-select" name="pet_vacinated" id="pet_vacinated">
               <option selected="true" disabled="disabled">Choose type</option>
               <option value="1">True</option>
               <option value="2">False</option>
@@ -135,7 +135,7 @@
             <!-- Comment -->
             <div class="form-group">
                 <label for="postForm">Description</label>
-                <textarea class="form-control" id="pet_description" rows="5"></textarea>
+                <textarea class="form-control" name="pet_description" id="pet_description" rows="5"></textarea>
                 <div class="invalid-feedback">
                 Description is required
                 </div>
