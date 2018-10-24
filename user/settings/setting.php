@@ -34,7 +34,7 @@
                           while( $record = mysqli_fetch_assoc($resultset) ) {
                           ?>
                             <form method="post" action="update_settings.php">
-                              <input type="hidden" class="form-control" id="id_user" name="id_user" value="<?php echo $record['username']; ?>"></input>
+                              <input type="hidden" class="form-control" id="id_user" name="id_user" value="<?php echo $record['user_id']; ?>"></input>
                               <div class="input-group mb-4">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text">image</span>
