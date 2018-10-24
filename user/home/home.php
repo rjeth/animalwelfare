@@ -58,7 +58,7 @@
                       </div>
                       <div class="card-body">
 
-                        <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
+                        <img src="upload/<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
 
                           <h1 class="my-4"><?php echo $record['pet_name']; ?> </h1>
 
