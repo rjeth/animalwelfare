@@ -50,7 +50,7 @@
                         ?>
                         <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
 
-                          <h1 class="my-4"><?php echo $record['pet_name']; ?><span class="badge red"><?php echo $record['pet_status']; ?></span></h1>
+                          <h1 class="my-4"><?php echo $record['pet_name']; ?> <span class="badge red"><?php echo $record['pet_status']; ?></span></h1>
 
                           <p class="mt-0 mb-1 text-muted" for="location">Type</p>
                           <label id="location"><?php echo $record['pet_type']; ?></label>
