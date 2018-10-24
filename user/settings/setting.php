@@ -50,7 +50,7 @@
                               </div>
                               <div class="form-group">
                                   <label for="replyFormComment">Bios</label>
-                                  <textarea type="text" class="form-control" id="bios" name="bios" rows="5"></textarea>
+                                  <textarea type="text" class="form-control" id="bios" name="bios" rows="5" value="<?php echo $record['bio']; ?>"></textarea>
                               </div>
 
                               <hr class="mt-10">
