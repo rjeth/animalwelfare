@@ -42,8 +42,25 @@ function validType() {
     }
 }
 
-function validCategory() {
+function validBreed() {
+    var opt = $('#pet_category option[disabled]:selected').val();
+    if (opt == "Choose Breed") {
+        $('#pet_category').addClass('is-invalid');
+        bool = false;
+    } else {
+        $('#pet_category').removeClass('is-invalid');
+        bool = true;
+    }
+}
 
+function validGender() {
+    if ($('input[name=pet_gender]:checked').length > 0) {
+        $('#gender_message').html('');
+        bool = true;
+    } else {
+        $('#gender_message').html('Please select gender');
+        bool = false;
+    }
 }
 
 function validAge() {
@@ -126,13 +143,19 @@ $('#pet_name').blur(function () {
 $('#pet_type').blur(function () {
     validType();
 });
+$('#pet_category').blur(function () {
+    validBreed();
+});
 $('#pet_age').blur(function () {
     validAge();
+});
+$('#pet_gender').blur(function () {
+    validGender();
 });
 $('#pet_dewormed').blur(function () {
     validDewormed();
 });
-$('#pet_vacinated').blur(function () {
+$('#pet_vaccinated').blur(function () {
     validVacinated();
 });
 $('#pet_description').blur(function () {
@@ -143,6 +166,8 @@ function Validate() {
     validImage();
     validName();
     validType();
+    validBreed();
+    validGender();
     validAge();
     validDewormed();
     validVacinated();
