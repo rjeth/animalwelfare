@@ -41,44 +41,44 @@
                               </button>
                           </span>
                       </div>
-                      <!--Card content-->
-                        <div class="card-body">
-                          <?php
-                          include_once("../../core/config.php");
-                          $sql = "SELECT * FROM tbl_pets WHERE pet_id = 23";
-                          $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
-                          while( $record = mysqli_fetch_assoc($resultset) ) {
-                          ?>
-                          <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
+                      <div class="card-body">
+                        <?php
+                        include_once("../../core/config.php");
+                        $sql = "SELECT * FROM tbl_pets WHERE pet_id = 23";
+                        $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                        while( $record = mysqli_fetch_assoc($resultset) ) {
+                        ?>
+                        <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
 
-                            <p class="h5 my-4"><?php echo $record['pet_name']; ?></p>
+                          <p class="h5 my-4"><?php echo $record['pet_name']; ?></p>
 
-                            <p class="mt-0 mb-1 text-muted" for="location">Status</p>
-                            <label id="location"><?php echo $record['pet_status']; ?></label>
-                            <p class="mt-0 mb-1 text-muted" for="location">Type</p>
-                            <label id="location"><?php echo $record['pet_type']; ?></label>
-                            <p class="mt-0 mb-1 text-muted" for="location">Age</p>
-                            <label id="location"><?php echo $record['pet_age']; ?></label>
-                            <p class="mt-0 mb-1 text-muted" for="location">Gender</p>
-                            <label id="location"><?php echo $record['pet_gender']; ?></label>
-                            <p class="mt-0 mb-1 text-muted" for="location">Location</p>
-                            <label id="location"><?php echo $record['pet_location']; ?></label>
-                            <p class="mt-0 mb-1 text-muted" for="location">Description</p>
-                            <label id="location"><?php echo $record['pet_details']; ?></label>
-                            <p class="mt-0 mb-1 text-muted" for="location">Dewormed</p>
-                            <label id="location"><?php if($record['pet_dewormed'] == 0){
-                              echo "false";
-                            }else{
-                              echo "true";
-                            } ?></label>
-                            <p class="mt-0 mb-1 text-muted" for="location">Vaccinated</p>
-                            <label id="location"><?php if($record['pet_vaccinated'] == 0){
-                              echo "false";
-                            }else{
-                              echo "true";
-                            } ?></label>
-                          <?php } ?>
-                        </div>
+                          <p class="mt-0 mb-1 text-muted" for="location">Status</p>
+                          <label id="location"><?php echo $record['pet_status']; ?></label>
+                          <p class="mt-0 mb-1 text-muted" for="location">Type</p>
+                          <label id="location"><?php echo $record['pet_type']; ?></label>
+                          <p class="mt-0 mb-1 text-muted" for="location">Age</p>
+                          <label id="location"><?php echo $record['pet_age']; ?></label>
+                          <p class="mt-0 mb-1 text-muted" for="location">Gender</p>
+                          <label id="location"><?php echo $record['pet_gender']; ?></label>
+                          <p class="mt-0 mb-1 text-muted" for="location">Location</p>
+                          <label id="location"><?php echo $record['pet_location']; ?></label>
+                          <p class="mt-0 mb-1 text-muted" for="location">Description</p>
+                          <label id="location"><?php echo $record['pet_details']; ?></label>
+                          <p class="mt-0 mb-1 text-muted" for="location">Dewormed</p>
+                          <label id="location"><?php if($record['pet_dewormed'] == 0){
+                            echo "false";
+                          }else{
+                            echo "true";
+                          } ?></label>
+                          <p class="mt-0 mb-1 text-muted" for="location">Vaccinated</p>
+                          <label id="location"><?php if($record['pet_vaccinated'] == 0){
+                            echo "false";
+                          }else{
+                            echo "true";
+                          } ?></label>
+                        <?php } ?>
+                      </div>
+
                     </div>
 
 
