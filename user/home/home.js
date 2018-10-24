@@ -90,7 +90,11 @@ function validDescription() {
 
 function validateAll() {
     if (bool) {
-        alert('nice one');
+        var form = $('#vform').serialize();
+        $.ajax({
+            url: 'upload.php',
+            data:
+        })
     }
 }
 

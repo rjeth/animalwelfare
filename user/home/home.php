@@ -70,7 +70,7 @@
       <div class="modal-body">
 
 
-        <form id="post_form" onsubmit="return Validate()">
+        <form id="post_form" onsubmit="return Validate()" enctype="multipart/form-data">
           <div class="input-group mb-4">
             <div class="input-group-prepend">
               <span class="input-group-text">Image</span>
