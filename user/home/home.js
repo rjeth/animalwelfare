@@ -120,7 +120,7 @@ function validateAll() {
             contentType: false,
             processData: false,
             success: function (data) {
-                swal('Uploaded Successfully', '', 'success', {
+                swal(data, '', 'success', {
                         closeOnClickOutside: false
                     })
                     .then((value) => {
@@ -178,3 +178,68 @@ function Validate() {
     validateAll();
     return false;
 }
+$('#up').click(function () {
+    $('#action').val('Add');
+    $('#hideImage').show();
+});
+$('button[name="edit"]').click(function () {
+    var id = $(this).attr('id');
+    $.ajax({
+        url: 'fetch_single.php',
+        method: 'POST',
+        dataType: 'json',
+        data: {
+            id: id
+        },
+        success: function (data) {
+            $('#action').val('Edit')
+            $('#hideImage').hide();
+            $('#pet_name').val(data.pet_name);
+            $('#pet_type').val(data.pet_type);
+            $('#pet_category').val(data.pet_category);
+            $('#pet_age').val(data.pet_age);
+            $('#pet_description').val(data.pet_details);
+            if (data.pet_gender == 'Male') {
+                $('#Male').prop('checked', true);
+            } else {
+                $('#Female').prop('checked', true);
+            }
+            if (data.pet_dewormed == '1') {
+                $('#dewormed_true').prop('selected', true);
+            } else {
+                $('#dewormed_false').prop('selected', true);
+            }
+            if (data.pet_vaccinated == '1') {
+                $('#vaccinated_true').prop('selected', true);
+            } else {
+                $('#vaccinated_false').prop('selected', true);
+            }
+        }
+    })
+});
+$('button[name="delete"]').click(function () {
+    var id = $(this).attr('id');
+    swal('Are you sure you want to delete this?', '', 'warning', {
+            buttons: true,
+            dangerMode: true
+        })
+        .then((value) => {
+            if (value) {
+                $.ajax({
+                    url: 'delete.php',
+                    method: 'POST',
+                    data: {
+                        id: id
+                    },
+                    success: function (data) {
+                        swal('Deleted Successfully', '', 'success', {
+                                closeOnClickOutside: false
+                            })
+                            .then((value) => {
+                                location.reload();
+                            })
+                    }
+                })
+            }
+        })
+});

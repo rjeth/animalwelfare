@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if(isset($_POST['id'])){
+        $id = $_POST['id'];
+    }
+    $type = $_POST['action'];
     include '../../core/config.php';
     $pet_name = $_POST['pet_name'];
     $pet_type = $_POST['pet_type'];
@@ -21,5 +25,12 @@
     $user = $result["user_id"];
     $location = $result["address"];
 
-    mysqli_query($connect,"INSERT INTO tbl_pets (pet_name,pet_age,pet_type,pet_image,pet_details,pet_location,pet_category,pet_gender,pet_vaccinated,pet_dewormed,user)VALUES('$pet_name','$pet_age','$pet_type','$new_name','$pet_description','$location','$pet_breed','$pet_gender','$pet_vaccinated','$pet_dewormed','$user')");
+    if($type == 'Add'){
+        mysqli_query($connect,"INSERT INTO tbl_pets (pet_name,pet_age,pet_type,pet_image,pet_details,pet_location,pet_category,pet_gender,pet_vaccinated,pet_dewormed,user)VALUES('$pet_name','$pet_age','$pet_type','$new_name','$pet_description','$location','$pet_breed','$pet_gender','$pet_vaccinated','$pet_dewormed','$user')");
+        echo 'Uploaded Sucessfully';
+    }
+    else{
+        mysqli_query($connect,"UPDATE tbl_pets SET pet_name='$pet_name', pet_age='$pet_age', pet_type='$pet_type', pet_details='$pet_description', pet_category='$pet_breed', pet_gender='$pet_gender', pet_vaccinated='$pet_vaccinated', pet_dewormed='$pet_dewormed'");
+        echo 'Edit Sucessfully';
+    }
 ?>
