@@ -90,7 +90,19 @@ function validDescription() {
 
 function validateAll() {
     if (bool) {
-        alert('nice one');
+        var form = $('#vform').serialize();
+        $.ajax({
+            url: 'upload.php',
+            method: 'POST',
+            data: form,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                swal('Uploaded Successfully', '', 'success', {
+                    closeOnClickOutside: false
+                });
+            }
+        });
     }
 }
 
