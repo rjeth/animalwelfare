@@ -141,9 +141,9 @@
             <label for="select">Type</label>
               <select class="browser-default custom-select" name="pet_type" id="pet_type">
                 <option selected="true" disabled="disabled">Choose type</option>
-                <option value="1">Dog</option>
-                <option value="2">Cat</option>
-                <option value="3">others</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Others">Others</option>
               </select>
             <div class="invalid-feedback">
                 Please select
@@ -189,6 +189,7 @@
                     </label>
                   </div>
               </div>
+              <p class="text-danger" id="gender_message"></p>
         </div>
           <div class="form-group">
             <label for="select">Dewormed</label>
@@ -243,8 +244,6 @@
         </button>
       </div>
       <div class="modal-body">
-
-
         <form >
           <?php
           include_once("../../core/config.php");
