@@ -24,7 +24,7 @@
                 <div class="col-md-8 mb-4">
                   <div class="card mb-3 wow fadeIn">
                       <div class="card-header font-weight-bold">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#upload_pet">Edit</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#upload_pet">Upload</button>
                       </div>
                   </div>
 
@@ -50,10 +50,8 @@
                         ?>
                         <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
 
-                          <p class="h5 my-4"><?php echo $record['pet_name']; ?></p>
+                          <p class="h5 my-4"><?php echo $record['pet_name']; ?><span class="badge red"><?php echo $record['pet_status']; ?></span></p>
 
-                          <p class="mt-0 mb-1 text-muted" for="location">Status</p>
-                          <label id="location"><?php echo $record['pet_status']; ?></label>
                           <p class="mt-0 mb-1 text-muted" for="location">Type</p>
                           <label id="location"><?php echo $record['pet_type']; ?></label>
                           <p class="mt-0 mb-1 text-muted" for="location">Age</p>
