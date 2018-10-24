@@ -36,14 +36,24 @@
                     <div class="card mb-4 wow fadeIn">
                       <div class="card-header font-weight-bold">
                           <h3 style="float:left"><span class="badge red"><?php echo $record['pet_status']; ?></span></h3>
+
                           <span style="float:right">
-                              <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#edit_pet">
-                                  Edit
-                              </button>
-                              |
-                              <button type="button" class="btn btn-sm btn-danger" id="delete">
-                                  delete
-                              </button>
+                            <form class="form-inline my-1">
+                               <ul class="navbar-nav mr-auto">
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"></a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                  <button type="button" class="dropdown-item" data-toggle="modal" data-target="#edit_pet">
+                                      Edit
+                                  </button>
+                                  <button type="button" class="dropdown-item" id="delete">
+                                      delete
+                                  </button>
+                                </div>
+                              </li>
+                            </ul>
+                            </form>
                           </span>
                       </div>
                       <div class="card-body">
