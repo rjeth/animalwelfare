@@ -62,7 +62,7 @@
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
             <a href="../user/register.php" class="nav-link border border-light rounded waves-effect waves-light">
-              <i class="fa fa-github mr-2"></i>Sign up
+              <i class="fas fa-pen-square" style="margin-right:5px"></i>Sign up
             </a>
           </li>
 
@@ -72,7 +72,7 @@
 
           <li class="nav-item">
             <a href="../user/login.php" class="nav-link border border-light rounded waves-effect waves-light">
-              <i class="fa fa-github mr-2"></i>Login
+              <i class="fas fa-sign-in-alt" style="margin-right:5px"></i>Login
             </a>
           </li>
         </ul>

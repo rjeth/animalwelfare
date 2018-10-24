@@ -7,7 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>ANIMAL WELFARE</title>
   <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="../../assets/css/fontawesome/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -66,7 +67,7 @@
           <li class="nav-item">
             <a href="../logout.php" class="nav-link border border-light rounded waves-effect waves-light"
              >
-              <i class="fa fa-github mr-2"></i>Log out
+              <i class="fas fa-sign-out-alt"></i>Log out
             </a>
           </li>
         </ul>
