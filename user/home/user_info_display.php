@@ -13,7 +13,7 @@ while( $record = mysqli_fetch_assoc($resultset) ) {
         </h5>
         <div>
             <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">BIO</p>
-            <label id="location">dignissimos ducimus</label>
+            <label id="location"><?php echo $record['bio']; ?></label>
 
         </div>
 
@@ -24,7 +24,7 @@ while( $record = mysqli_fetch_assoc($resultset) ) {
         </div>
         <div>
             <p class="mt-0 mb-1 font-weight-bold text-muted" for="location">Pets</p>
-            <label id="location">dignissimos ducimus</label>
+            <label id="location"><?php echo $record['username']; ?></label>
 
         </div>
 

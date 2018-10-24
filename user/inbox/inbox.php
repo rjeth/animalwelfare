@@ -28,7 +28,6 @@
       <div class="container">
           <!--Section: Post-->
           <section class="mt-4">
-
               <!--Grid row-->
               <div class="row">
                 <div class="col-md-4 mb-4">
