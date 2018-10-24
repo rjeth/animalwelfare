@@ -1,18 +1,18 @@
 var bool = false;
 
 function validImage() {
-    var extension = $('#fileInput').val().split('.').pop().toLowerCase();
+    var extension = $('#image_file').val().split('.').pop().toLowerCase();
     if (extension != '') {
         if (jQuery.inArray(extension, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
             swal("Invalid image file", "", "warning").
             then((value) => {
-                $('#fileInput').val('');
+                $('#image_file').val('');
             });
             bool = false;
             return false;
         }
     }
-    if ($('#fileInput').val() == "") {
+    if ($('#image_file').val() == "") {
         swal("Please input image", "", "warning");
         bool = false;
         return false;
@@ -114,9 +114,6 @@ $('#pet_age').bind('input', function () {
 });
 $('#pet_description').bind('input', function () {
     validDescription();
-});
-$('#fileInput').blur(function () {
-    validImage();
 });
 $('#pet_name').blur(function () {
     validName();
