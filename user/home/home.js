@@ -90,11 +90,12 @@ function validDescription() {
 
 function validateAll() {
     if (bool) {
-        var form = $('#vform').serialize();
+        var form = $('#post_form')[0];
+        var formData = new FormData(form);
         $.ajax({
             url: 'upload.php',
             method: 'POST',
-            data: form,
+            data: formData,
             contentType: false,
             processData: false,
             success: function (data) {
