@@ -105,7 +105,7 @@
                                         </div>
                                       </div>
                                       <hr>
-                                      <a class="link-text" href="view_pet_info.php">
+                                      <?php echo   '<a class="link-text" href="view_pet_info.php?pet_id='.$record['pet_id'].'">'; ?>
                                         <h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
                                   </div>
                                   <!--/.Card content-->
