@@ -24,21 +24,21 @@
                 <div class="col-md-8 mb-4">
                   <div class="card mb-3 wow fadeIn">
                       <div class="card-header font-weight-bold">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Upload</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#upload_pet">Edit</button>
                       </div>
                   </div>
 
                     <div class="card mb-4 wow fadeIn">
                       <div class="card-header font-weight-bold">
-                          <span>That's a very long heading</span>
+                          <span style="float:left">That's a very long heading</span>
                           <span style="float:right">
-                              <a href="">
+                              <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#edit_pet">
                                   Edit
-                              </a>
+                              </button>
                               |
-                              <a href="" class="text-danger">
-                                Delete
-                              </a>
+                              <button type="button" class="btn btn-sm btn-danger" id="delete">
+                                  delete
+                              </button>
                           </span>
                       </div>
                       <!--Card content-->
@@ -93,7 +93,7 @@
     </div>
 </main>
 
-<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="upload_pet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -105,7 +105,77 @@
       <div class="modal-body">
 
 
-        <form > 
+        <form >
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Image</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="image_file" name="image_file" aria-describedby="fileInput">
+              <label class="custom-file-label" for="fileInput">File Label</label>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="postForm">Pet name</label>
+              <input class="form-control" id="pet_name" name="pet_name" type="text" rows="5"></input>
+          </div>
+          <div class="form-group">
+            <label for="select">Type</label>
+            <select class="browser-default custom-select" id="pet_type" name="pet_type" >
+              <option value="" disabled="" selected="">Choose type</option>
+              <option value="1">Dog</option>
+              <option value="2">Cat</option>
+              <option value="3">others</option>
+            </select>
+          </div>
+          <div class="form-group">
+              <label for="postForm">Age</label>
+              <input class="form-control" id="pet_age" name="pet_age" type="number" rows="5"></input>
+          </div>
+          <div class="form-group">
+            <label for="select">Dewormed</label>
+            <select class="browser-default custom-select" id="pet_dewormed" name="pet_dewormed">
+              <option value="" disabled="" selected="">Choose type</option>
+              <option value="1">True</option>
+              <option value="2">False</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="select">Vacinated</label>
+            <select class="browser-default custom-select" id="pet_vaccinated" name="pet_vaccinated">
+              <option value="" disabled="" selected="">Choose type</option>
+              <option value="1">True</option>
+              <option value="2">False</option>
+            </select>
+          </div>
+
+            <!-- Comment -->
+            <div class="form-group">
+                <label for="postForm">Description</label>
+                <textarea class="form-control" id="pet_description"  name="pet_description" type="text" rows="5"></textarea>
+            </div>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="btn btn-info" type="submit">Post</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="edit_pet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">POST</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <form >
           <div class="input-group mb-4">
             <div class="input-group-prepend">
               <span class="input-group-text">Image</span>
