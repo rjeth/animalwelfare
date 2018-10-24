@@ -30,30 +30,48 @@
 
                     <div class="card mb-4 wow fadeIn">
                       <div class="card-header font-weight-bold">
-                          <span>About author</span>
+                          <span>That's a very long heading</span>
                           <span style="float:right">
                               <a href="">
                                   Edit
                               </a>
-                              <a href="">
+                              |
+                              <a href="" class="text-danger">
                                 Delete
                               </a>
                           </span>
                       </div>
                       <!--Card content-->
                         <div class="card-body">
-
-                          <img src="https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg" class="img-fluid" alt="Responsive image">
-                            <p class="h5 my-4">That's a very long heading </p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ut rerum deserunt corporis
-                                ducimus at, deleniti ea alias dolor reprehenderit sit vel. Incidunt id illum doloribus,
-                                consequuntur maiores sed eligendi.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ut rerum deserunt corporis
-                                ducimus at, deleniti ea alias dolor reprehenderit sit vel. Incidunt id illum doloribus,
-                                consequuntur maiores sed eligendi.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ut rerum deserunt corporis
-                                ducimus at, deleniti ea alias dolor reprehenderit sit vel. Incidunt id illum doloribus,
-                                consequuntur maiores sed eligendi.</p>
+                          <?php
+                          include_once("../../core/config.php");
+                          $sql = "SELECT * FROM tbl_pets WHERE pet_id = 23";
+                          $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                          while( $record = mysqli_fetch_assoc($resultset) ) {
+                          ?>
+                          <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
+                            <p class="h5 my-4"><?php echo $record['pet_name']; ?></p>
+                            <p class="mt-0 mb-1 text-muted" for="location">Age</p>
+                            <label id="location"><?php echo $record['pet_age']; ?></label>
+                            <p class="mt-0 mb-1 text-muted" for="location">Gender</p>
+                            <label id="location"><?php echo $record['pet_gender']; ?></label>
+                            <p class="mt-0 mb-1 text-muted" for="location">Location</p>
+                            <label id="location"><?php echo $record['pet_location']; ?></label>
+                            <p class="mt-0 mb-1 text-muted" for="location">Description</p>
+                            <label id="location"><?php echo $record['pet_details']; ?></label>
+                            <p class="mt-0 mb-1 text-muted" for="location">Dewormed</p>
+                            <label id="location"><?php if($record['pet_dewormed'] == 0){
+                              echo "false";
+                            }else{
+                              echo "true";
+                            } ?></label>
+                            <p class="mt-0 mb-1 text-muted" for="location">Vaccinated</p>
+                            <label id="location"><?php if($record['pet_vaccinated'] == 0){
+                              echo "false";
+                            }else{
+                              echo "true";
+                            } ?></label>
+                          <?php } ?>
                         </div>
                     </div>
 
@@ -98,7 +116,7 @@
           </div>
           <div class="form-group">
             <label for="select">Type</label>
-            <select class="browser-default custom-select" id="pet_type" name="pet_type">
+            <select class="browser-default custom-select" id="pet_type" name="pet_type" >
               <option value="" disabled="" selected="">Choose type</option>
               <option value="1">Dog</option>
               <option value="2">Cat</option>
