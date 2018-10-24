@@ -33,38 +33,8 @@
               <div class="row">
                 <div class="col-md-4 mb-4">
                   <div class=" mb-4 wow fadeIn">
-                            <!--Card content-->
-                            <div class="">
-                              <div class="md-form mb-4">
-                                <i class="fa fa-search prefix"></i>
-                                <input type="text" id="searchConv" class="form-control" placeholder="search">
-                              </div>
-                              <div class="list-group scrollbar-deep-purple  thin example-1">
-
-                           <!-- Single message -->
-                           <a href="#" class="list-group-item list-group-item-action media active">
-                               <!-- Avatar -->
-                               <img class="mr-3 avatar-sm float-left" src="https://mdbootstrap.com/img/Photos/Avatars/adach.jpg">
-
-                               <!-- Author -->
-                               <div class="d-flex justify-content-between mb-1 ">
-                                   <hp class="mb-1"><strong>Dawid Adach</strong></hp>
-                                   <small>13 July</small>
-                               </div>
-                               <!-- Message -->
-                               <p class="text-truncate"><strong>You: </strong> Donec id elit non mi porta gravida at eget metus. Maecenas
-                                   sed diam eget risus varius blandit.</p>
-                           </a>
-                           <!-- Single message -->
-
-
-
-
-                       </div>
-
-
-                            </div>
-                        </div>
+                      <?php include("side.php"); ?>
+                  </div>
                 </div>
 
                   <!--Grid column-->
@@ -111,12 +81,13 @@
                                       sit eos, cum fugit voluptatibus quos laboriosam sed tenetur voluptate!</p>
                                 </div>
                               </div>
-                              <div class="md-form chat-message-type ">
-                                <textarea name="editor1"></textarea>
-
-                              </div>
 
 
+
+                          </div>
+                          <div class="card-foot">
+                            <textarea name="editor1"></textarea>
+                               <button class="btn btn-info my-4" type="submit">post</button>
                           </div>
                       </div>
                   </div>
@@ -128,7 +99,6 @@
 
       </div>
   </main>
-
 		<script>
 			CKEDITOR.replace( 'editor1' );
 		</script>
