@@ -11,8 +11,6 @@
       </div>
         <!--Section: Post-->
         <section class="mt-4">
-
-
             <div class="row">
               <div class="col-md-4 mb-4">
                 <div class="card mb-4 wow fadeIn">
@@ -98,6 +96,22 @@
           <div class="form-group">
               <label for="postForm">Age</label>
               <input class="form-control" id="postForm" type="number" rows="5"></input>
+          </div>
+          <div class="form-group">
+            <label for="select">Dewormed</label>
+            <select class="browser-default custom-select" id="select">
+              <option value="" disabled="" selected="">Choose type</option>
+              <option value="1">True</option>
+              <option value="2">False</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="select">Vacinated</label>
+            <select class="browser-default custom-select" id="select">
+              <option value="" disabled="" selected="">Choose type</option>
+              <option value="1">True</option>
+              <option value="2">False</option>
+            </select>
           </div>
 
             <!-- Comment -->

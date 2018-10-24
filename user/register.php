@@ -91,7 +91,7 @@
     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4" required>Minimal 8 characters lenght</small>
 
 
-    <input class="btn btn-info my-4 btn-block" type="submit" name="submit" value="Sign up"></input>
+    <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
   </form>
 </div>
   </div>
