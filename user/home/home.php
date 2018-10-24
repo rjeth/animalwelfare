@@ -203,6 +203,23 @@
                 Please select
             </div>
           </div>
+          <div class="form-group">
+            <label for="select">Category</label>
+              <select class="browser-default custom-select" id="pet_category">
+                  <option selected="true" disabled="disabled">Choose type</option>
+                <?php
+                include_once("../../core/config.php");
+                $sql = "SELECT * FROM pet_category";
+                $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                while( $record = mysqli_fetch_assoc($resultset) ) {
+                ?>
+                <option value="<?php echo $record['category_name']; ?>"><?php echo $record['category_name']; ?></option>
+              <?php } ?>
+              </select>
+            <div class="invalid-feedback">
+                Please select
+            </div>
+          </div>
 
             <!-- Comment -->
             <div class="form-group">
