@@ -27,6 +27,7 @@
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#upload_pet">Upload</button>
                       </div>
                   </div>
+                  
                   <?php
                   include_once("../../core/config.php");
                   $sql = "SELECT * FROM tbl_pets WHERE user = {$user}";
