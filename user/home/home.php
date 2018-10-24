@@ -105,7 +105,7 @@
       <div class="modal-body">
 
 
-        <form>
+        <form > 
           <div class="input-group mb-4">
             <div class="input-group-prepend">
               <span class="input-group-text">Image</span>
