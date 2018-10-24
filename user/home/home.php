@@ -27,28 +27,22 @@
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Upload</button>
                       </div>
                   </div>
-              
+
                     <div class="card mb-4 wow fadeIn">
                       <div class="card-header font-weight-bold">
                           <span>About author</span>
-                          <span class="pull-right">
+                          <span style="float:right">
                               <a href="">
                                   <i class="fa fa-facebook mr-2"></i>
                               </a>
                               <a href="">
                                   <i class="fa fa-twitter mr-2"></i>
                               </a>
-                              <a href="">
-                                  <i class="fa fa-instagram mr-2"></i>
-                              </a>
-                              <a href="">
-                                  <i class="fa fa-linkedin mr-2"></i>
-                              </a>
                           </span>
                       </div>
                       <!--Card content-->
                         <div class="card-body">
-                            <p class="h5 my-4">That's a very long heading </p>
+
                           <img src="https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg" class="img-fluid" alt="Responsive image">
                             <p class="h5 my-4">That's a very long heading </p>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ut rerum deserunt corporis
