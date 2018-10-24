@@ -29,7 +29,7 @@
                   </div>
                   <?php
                   include_once("../../core/config.php");
-                  $sql = "SELECT * FROM tbl_pets WHERE pet_id = 23";
+                  $sql = "SELECT * FROM tbl_pets WHERE user = {$user}";
                   $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
                   while( $record = mysqli_fetch_assoc($resultset) ) {
                   ?>
@@ -58,7 +58,7 @@
                       </div>
                       <div class="card-body">
 
-                        <img src="<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
+                        <img src="upload/<?php echo $record['pet_image']; ?>" class="img-fluid" alt="Responsive image">
 
                           <h1 class="my-4"><?php echo $record['pet_name']; ?> </h1>
 
@@ -84,10 +84,11 @@
                           }else{
                             echo "true";
                           } ?></label>
-                        <?php } ?>
+
                       </div>
 
                     </div>
+                    <?php } ?>
 
 
                 </div>

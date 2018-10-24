@@ -66,8 +66,7 @@
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a href="../logout.php" class="nav-link border border-light rounded waves-effect waves-light"
-             >
+            <a href="../logout.php" class="nav-link border border-light rounded waves-effect waves-light">
               <i class="fas fa-sign-out-alt"></i>Log out
             </a>
           </li>
