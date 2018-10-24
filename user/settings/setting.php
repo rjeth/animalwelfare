@@ -121,9 +121,10 @@
                                 <div class="text-right mt-4">
                                     <button class="btn btn-info btn-md" type="submit">Update</button>
                                 </div>
-                            </form>
+
 
                           <?php } ?>
+                          </form>
                             <!-- Default form reply -->
 
 

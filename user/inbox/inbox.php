@@ -18,18 +18,10 @@
                 border-radius: 10px;
                   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
                   background-color: #512da8; }
-              .example-1 {
-              position: relative;
-              overflow-y: scroll;
-              height: 600px; }
-              .chat-message-type {
-                -webkit-box-flex: 1!important;
-                -webkit-flex: 1 0 auto!important;
-                -ms-flex: 1 0 auto!important;
-                flex: 1 0 auto!important
-              }
+
 
     </style>
+  <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
   <!-- Navbar -->
 
   <main class="mt-5 pt-5 pb-5">
@@ -64,7 +56,7 @@
                                    sed diam eget risus varius blandit.</p>
                            </a>
                            <!-- Single message -->
-                        
+
 
 
 
@@ -80,7 +72,7 @@
 
                       <!--Featured Image-->
 
-                      <div class="card mb-3 wow fadeIn scrollbar-deep-purple  thin example-1">
+                      <div class="card mb-3 wow fadeIn thin example-1">
                           <div class="card-body">
 
                               <!-- Default form reply -->
@@ -119,27 +111,15 @@
                                       sit eos, cum fugit voluptatibus quos laboriosam sed tenetur voluptate!</p>
                                 </div>
                               </div>
+                              <div class="md-form chat-message-type ">
+                                <textarea name="editor1"></textarea>
 
+                              </div>
 
 
                           </div>
                       </div>
-                      <div class="row">
-                                <div class="col-md-12">
-                                    <div class="d-flex flex-row">
-                                        <div class="md-form chat-message-type ">
-                                            <textarea type="text" id="form7" class="form-control" rows="4" style="padding: 15px;"></textarea>
-
-                                        </div>
-                                        <div class="mt-5">
-                                            <a class="btn btn-primary btn-lg waves-effect waves-light">Send</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                   </div>
-
-
               </div>
               <!--Grid row-->
 
@@ -148,4 +128,8 @@
 
       </div>
   </main>
+
+		<script>
+			CKEDITOR.replace( 'editor1' );
+		</script>
 <?php include("../../layout/foot.php"); ?>
