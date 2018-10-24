@@ -57,7 +57,7 @@
 
 
                           <div class="card-foot table-responsive">
-                        
+
                                <button class="btn btn-info " style="float:right" type="submit">post</button>
                           </div>
                       </div>

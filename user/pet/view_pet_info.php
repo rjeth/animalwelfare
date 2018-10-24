@@ -68,15 +68,19 @@
                             $sql = "SELECT * FROM user_tbl WHERE user_id = {$id} ";
                             $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
                             while( $record = mysqli_fetch_assoc($resultset) ) {
-                              echo $record['username'];
-                            }
-                            ?></label>
+                              echo $record['username']; ?>
+                            </label>
                           </div>
                           <div class="form-group">
                             <p class="mt-0 text-muted" for="location">location</p>
                             <label id="location"><?php echo $data['pet_location']; ?></label>
                           </div>
-
+                          <div class="form-group">
+                        <?php  echo "<a class='btn btn-primary' href='../inbox/create_message.php?user_id=".$record['user_id']."'>Send Message to Pet owner</a>" ?>
+                          </div>
+                          <?php
+                        }
+                        ?>
 
                         </div>
                     </div>

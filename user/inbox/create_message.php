@@ -43,6 +43,18 @@
 
                       <div class="card wow fadeIn thin">
                           <div class="card-body">
+
+                          </div>
+                          <?php
+                          require_once '../../core/config.php';
+                          if($_GET['pet_id']) {
+                              $id = $_GET['pet_id'];
+                              $sql = "SELECT * FROM tbl_pets WHERE pet_id = {$id}";
+                              $result = $connect->query($sql);
+                              $data = $result->fetch_assoc();
+                              ?>
+
+                          <div class="card-foot table-responsive">
                             <div class="form-group">
                                 <label for="postForm">Subject</label>
                                 <input class="form-control" id="pet_name" name="pet_name" type="text"></input>
@@ -53,13 +65,9 @@
                             <div class="form-group">
                             <textarea name="editor1"></textarea>
                           </div>
-                          </div>
-
-
-                          <div class="card-foot table-responsive">
-                        
                                <button class="btn btn-info " style="float:right" type="submit">post</button>
                           </div>
+                        <?php } ?>
                       </div>
                   </div>
               </div>
