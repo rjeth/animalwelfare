@@ -105,7 +105,7 @@
 
 
 
-        <form id="post_form" onsubmit="return Validate()">
+        <form method="POST" id="post_form" onsubmit="return Validate()">
 
           <div class="input-group mb-4">
             <div class="input-group-prepend">
@@ -129,7 +129,7 @@
           </div>
           <div class="form-group">
             <label for="select">Type</label>
-              <select class="browser-default custom-select" id="pet_type">
+              <select class="browser-default custom-select" name="pet_type" id="pet_type">
                 <option selected="true" disabled="disabled">Choose type</option>
                 <option value="1">Dog</option>
                 <option value="2">Cat</option>
@@ -158,7 +158,7 @@
           </div>
           <div class="form-group">
               <label for="postForm">Age</label>
-              <input class="form-control" id="pet_age" type="number" rows="5" min="0"></input>
+              <input class="form-control" name="pet_age" id="pet_age" type="number" rows="5" min="0"></input>
               <div class="invalid-feedback" id="pet_age_message">
                 Please enter age
               </div>
@@ -167,13 +167,13 @@
               <label for="gen">Gender</label>
               <div class="row">
                 <div class="custom-control custom-radio">
-                    <input class="control-input" type="radio" name="gender"  value="Female">
+                    <input class="control-input" type="radio" name="pet_gender"  value="Female">
                     <label class="control-label" for="gender">
                       Female
                     </label>
                   </div>
                   <div class="custom-control custom-radio">
-                    <input class="control-input" type="radio" name="gender"  value="Male" >
+                    <input class="control-input" type="radio" name="pet_gender"  value="Male" >
                     <label class="control-label" for="gender">
                       Male
                     </label>
@@ -182,22 +182,22 @@
         </div>
           <div class="form-group">
             <label for="select">Dewormed</label>
-            <select class="browser-default custom-select" id="pet_dewormed">
+            <select class="browser-default custom-select" name="pet_dewormed" id="pet_dewormed">
               <option selected="true" disabled="disabled">Choose type</option>
               <option value="1">True</option>
-              <option value="2">False</option>
+              <option value="0">False</option>
             </select>
             <div class="invalid-feedback">
                 Please select
             </div>
           </div>
           <div class="form-group">
-            <label for="select">Vacinated</label>
+            <label for="select">Vaccinated</label>
 
-            <select class="browser-default custom-select" id="pet_vacinated"  name="pet_vaccinated">
+            <select class="browser-default custom-select" id="pet_vaccinated"  name="pet_vaccinated">
               <option selected="true" disabled="disabled">Choose type</option>
               <option value="1">True</option>
-              <option value="2">False</option>
+              <option value="0">False</option>
             </select>
             <div class="invalid-feedback">
                 Please select

@@ -1,18 +1,18 @@
 var bool = false;
 
 function validImage() {
-    var extension = $('#fileInput').val().split('.').pop().toLowerCase();
+    var extension = $('#image_file').val().split('.').pop().toLowerCase();
     if (extension != '') {
         if (jQuery.inArray(extension, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
             swal("Invalid image file", "", "warning").
             then((value) => {
-                $('#fileInput').val('');
+                $('#image_file').val('');
             });
             bool = false;
             return false;
         }
     }
-    if ($('#fileInput').val() == "") {
+    if ($('#image_file').val() == "") {
         swal("Please input image", "", "warning");
         bool = false;
         return false;
@@ -90,11 +90,12 @@ function validDescription() {
 
 function validateAll() {
     if (bool) {
-        var form = $('#vform').serialize();
+        var form = $('#post_form')[0];
+        var formData = new FormData(form);
         $.ajax({
             url: 'upload.php',
             method: 'POST',
-            data: form,
+            data: formData,
             contentType: false,
             processData: false,
             success: function (data) {
@@ -114,9 +115,6 @@ $('#pet_age').bind('input', function () {
 });
 $('#pet_description').bind('input', function () {
     validDescription();
-});
-$('#fileInput').blur(function () {
-    validImage();
 });
 $('#pet_name').blur(function () {
     validName();
