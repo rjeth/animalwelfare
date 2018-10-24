@@ -35,7 +35,7 @@
                   ?>
                     <div class="card mb-4 wow fadeIn">
                       <div class="card-header font-weight-bold">
-                          <h3 style="float:left"><span class="badge red"><?php echo $record['pet_status']; ?></span></h3>
+                          <h3 style="float:left"><?php echo $record['pet_status']; ?></h3>
 
                           <span style="float:right">
                             <form class="form-inline my-1">
