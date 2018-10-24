@@ -251,6 +251,38 @@
               <input class="form-control" id="pet_age" name="pet_age" type="number" rows="5" value="<?php echo $record['pet_age']; ?>"></input>
           </div>
           <div class="form-group">
+              <label for="gen">Gender</label>
+              <div class="row">
+                <?php if ($record['pet_gender'] == 'Male'){ ?>
+                <div class="custom-control custom-radio">
+                    <input class="control-input" type="radio" name="gender"  value="Female">
+                    <label class="control-label" for="gender">
+                      Female
+                    </label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input class="control-input" type="radio" name="gender"  value="Male" checked>
+                    <label class="control-label" for="gender">
+                      Male
+                    </label>
+                  </div>
+                <?php }else {?>
+              <div class="custom-control custom-radio">
+                      <input class="control-input" type="radio" name="gender"  value="Female" checked>
+                      <label class="control-label" for="gender">
+                        Female
+                      </label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input class="control-input" type="radio" name="gender"  value="Male" >
+                      <label class="control-label" for="gender">
+                        Male
+                      </label>
+                    </div>
+              <?php  } ?>
+              </div>
+        </div>
+          <div class="form-group">
             <label for="select">Dewormed</label>
             <select class="browser-default custom-select" id="pet_dewormed" name="pet_dewormed">
             <?php if( $record['pet_dewormed'] == 0) {?>
