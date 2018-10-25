@@ -41,10 +41,10 @@
             <section class="mb-5">
               <!-- Search form -->
               <label for="textInput">Search</label>
-              <input type="text" id="textInput" class="form-control mb-4" placeholder="Text input">
+              <input type="text" id="textInput" name="textInput" class="form-control mb-4" placeholder="Text input">
               <div class="row">
               <div class="col-md-4">
-                <label for="select">Default select</label>
+                <label for="select">Type/label>
                 <select class="browser-default custom-select mb-4" id="select">
                   <option value="" disabled="" selected="">Choose your option</option>
                   <option value="1">Option 1</option>
@@ -53,7 +53,7 @@
                 </select>
               </div>
               <div class="col-md-4">
-                <label for="select">Default select</label>
+                <label for="select">Location</label>
                 <select class="browser-default custom-select mb-4" id="select">
                   <option value="" disabled="" selected="">Choose your option</option>
                   <option value="1">Option 1</option>
@@ -125,6 +125,14 @@
   <!--Main layout-->
 
   <!--Footer-->
-
+  <script>
+      $(document).ready(function(){
+      $('input.typeahead').typeahead({
+          name: 'typeahead',
+          remote:'search.php?key=%QUERY',
+          limit : 10
+      });
+  });
+      </script>
 
 <?php include("../../layout/foot.php"); ?>
