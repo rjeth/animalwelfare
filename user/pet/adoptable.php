@@ -72,7 +72,7 @@ $keyword = $_POST['keyword'];
                   <div class="row">
                     <?php
                     include_once("../../core/config.php");
-                    $sql = "SELECT * FROM tbl_pets";
+                    $sql = "SELECT * FROM tbl_pets ";
                     $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
                     while( $record = mysqli_fetch_assoc($resultset) ) {
                     ?>
