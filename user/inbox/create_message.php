@@ -23,7 +23,7 @@
 
 
     </style>
-  <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+
   <!-- Navbar -->
 
   <main class="mt-5 pt-5 pb-5">

@@ -55,19 +55,21 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                <tr>
-                                  <?php
-                                  require_once ("../../core/config.php");
-                                  $sql = "SELECT * FROM tbl_mail WHERE user_id = $user";
-                                  $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
-                                  while( $record = mysqli_fetch_assoc($resultset) ) {
-                                ?>
-                                  <td style="width:15%" class="text-center" ><a href=info_chat_box.php?id="3"><i class="fas fa-sign-out-alt"></i>Read</a></td>
-                                  <td style="width:20%" class="text-center"><?php echo $record['receiver_user_id']; ?></td>
-                                  <td style="width:50%" class="text-center"><?php echo $record['mail_subject']; ?></td>
-                                  <td style="width:20%" class="text-center"><?php echo $record['mail_date']; ?></td>
-                                </tr>
-                              <?php } ?>
+                                <?php
+                                require_once ("../../core/config.php");
+                                $sql = "SELECT * FROM tbl_mail WHERE user_id = $user";
+                                $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
+                                while( $record = mysqli_fetch_assoc($resultset) ) {
+                              ?>
+                              <?php echo  "
+                              <tr>
+                              <td style='width:15%' class='text-center' ><a href='info_chat_box.php?id=".$record['mail_id']."'><i class='fas fa-sign-out-alt'></i>Read</a></td>
+                                <td style='width:20%' class='text-center'>".$record['user_id']."</td>
+                                <td style='width:50%' class='text-center'>".$record['mail_subject']."</td>
+                                <td style='width:20%' class='text-center'>".$record['mail_date']."</td>
+                                  </tr>"; ?>
+
+                            <?php } ?>
                               </tbody>
                             </table>
 

@@ -23,6 +23,8 @@
   <script type="text/javascript" src="../../assets/js/mdb.min.js"></script>
   <!-- Sweet Alert -->
   <script type="text/javascript" src="../../assets/js/sweetalert.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/ckeditor.js"></script>
+    <script type="text/javascript" src="../../assets/js/uploadadapter.js"></script>
 
 
 </head>
