@@ -44,6 +44,10 @@
                       <div class="card wow fadeIn thin" >
                           <div class="card-body">
                             <div class="form-group">
+                                <label for="postForm">From</label>
+                                <input class="form-control" id="from" name="from" type="text"  disabled></input>
+                            </div>
+                            <div class="form-group">
                                 <label for="postForm">Subject</label>
                                 <input class="form-control" id="subject" name="subject" type="text"></input>
                             </div>
