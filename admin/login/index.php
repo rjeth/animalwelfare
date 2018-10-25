@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,42 +20,44 @@
     <!-- Custom styles for this template-->
     <link href="../assets/css/sb-admin.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body class="bg-dark">
+<body class="bg-dark">
 
     <div class="container">
-      <div class="card card-login mx-auto mt-5">
-        <div class="card-header">Login</div>
-        <div class="card-body">
-          <form>
-            <div class="form-group">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
-                <label for="inputEmail">Email address</label>
-              </div>
+        <div class="card card-login mx-auto mt-5">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+                <form method="POST" id="vform" onsubmit="return Validate()">
+                    <div role="alert" id="alert"></div>
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Username" required="required" autofocus="autofocus">
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password"
+                                required="required">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="remember-me">
+                                Remember Password
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+                <div class="text-center">
+                    <a class="d-block small" href="../forgot">Forgot Password?</a>
+                </div>
             </div>
-            <div class="form-group">
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                <label for="inputPassword">Password</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="remember-me">
-                  Remember Password
-                </label>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block" href="../dashboard">Login</a>
-          </form>
-          <div class="text-center">
-            <a class="d-block small" href="../forgot">Forgot Password?</a>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
@@ -64,7 +66,28 @@
 
     <!-- Core plugin JavaScript-->
     <script src="../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  </body>
+    <script>
+        function Validate(){
+            var form = $('#vform').serialize();
+            $.ajax({
+                url:'function.php',
+                method:'POST',
+                data:form,
+                success:function(data){
+                   if(data == 'Success'){
+                       $('#alert').removeClass('alert alert-danger');
+                       $('#alert').html('');
+                       window.location = '../dashboard';
+                   }
+                   else{
+                       $('#alert').addClass('alert alert-danger');
+                       $('#alert').html('Invalid Username or Password');
+                   }
+                }
+            });
+            return false
+        }
+    </script>
+</body>
 
 </html>
