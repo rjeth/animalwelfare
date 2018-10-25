@@ -40,27 +40,22 @@
                   <div class="col-md-9 mb-4">
 
                       <!--Featured Image-->
-
-                      <div class="card wow fadeIn thin">
+                      <form method="post" action="">
+                      <div class="card wow fadeIn thin" >
                           <div class="card-body">
                             <div class="form-group">
                                 <label for="postForm">Subject</label>
-                                <input class="form-control" id="pet_name" name="pet_name" type="text"></input>
-                                <div class="invalid-feedback">
-                                  Please input your pet name
-                                </div>
+                                <input class="form-control" id="subject" name="subject" type="text"></input>
                             </div>
                             <div class="form-group">
-                            <textarea name="editor1"></textarea>
+                            <textarea name="editor1" id="editor1"></textarea>
                           </div>
                           </div>
-
-
                           <div class="card-foot table-responsive">
-
                                <button class="btn btn-info " style="float:right" type="submit">post</button>
                           </div>
                       </div>
+                    </form>
                   </div>
               </div>
               <!--Grid row-->
