@@ -54,12 +54,18 @@
                               </thead>
                               <tbody>
                                 <tr>
-                                    <td style="width:15%" class="text-center" ><a href=info_chat_box.php?id="3"><i class="fas fa-sign-out-alt"></i>Read</a></td>
-                                  <td style="width:20%" class="text-center">Mark</td>
-                                  <td style="width:50%" class="text-center">asdasdasdasdasdasdasdasdasdasdasdasdsdasdasdasdasd</td>
+                                  <?php
+                                  require_once ("../../core/config.php");
+                                  $sql = "SELECT * FROM tbl_mail WHERE receiver_user_id = {$id}";
+                                  $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
+                                  while( $record = mysqli_fetch_assoc($resultset) ) {
+                                ?>
+                                  <td style="width:15%" class="text-center" ><a href=info_chat_box.php?id="3"><i class="fas fa-sign-out-alt"></i>Read</a></td>
+                                  <td style="width:20%" class="text-center"><?php $record['user_id'] ?></td>
+                                  <td style="width:50%" class="text-center"><?php $record['mail_subject'] ?></td>
                                   <td style="width:20%" class="text-center">@mdo</td>
                                 </tr>
-
+                              <?php } ?>
                               </tbody>
                             </table>
 

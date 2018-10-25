@@ -1,3 +1,5 @@
+<?php require_once("../../core/session.php"); ?>
+<?php require_once("../../core/config.php"); ?>
 <?php include("../../layout/head2.php");  ?>
 
   <style>
@@ -38,9 +40,7 @@
 
                   <!--Grid column-->
                   <div class="col-md-9 mb-4">
-
                       <!--Featured Image-->
-
                       <div class="card wow fadeIn thin">
                           <div class="card-body">
                             <?php
