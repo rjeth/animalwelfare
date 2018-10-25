@@ -58,7 +58,7 @@
                                 <tr>
                                   <?php
                                   require_once ("../../core/config.php");
-                                  $sql = "SELECT * FROM tbl_mail WHERE user_id = $user";
+                                  $sql = "SELECT * FROM tbl_mail WHERE receiver_user_id = $user";
                                   $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
                                   while( $record = mysqli_fetch_assoc($resultset) ) {
                                 ?>
