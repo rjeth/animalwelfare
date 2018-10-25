@@ -7,7 +7,7 @@ while( $record = mysqli_fetch_assoc($resultset) ) {
 
 
 <div class="media d-block d-md-flex mt-3">
-    <img class="d-flex mb-3 mx-auto z-depth-1" style="width: 100px;" alt="Generic placeholder image" src="https://mdbootstrap.com/img/Photos/Avatars/img (30).jpg">
+    <img class="d-flex mb-3 mx-auto z-depth-1" style="width: 100px;" alt="Generic placeholder image" src="../settings/upload/<?php echo $record['user_image'] ?>">
     <div class="media-body text-center text-md-left ml-md-4 ml-0">
         <h5 class="mt-0 font-weight-bold"><?php echo $record['firstname']; ?> <?php echo $record['middlename']; ?> <?php echo $record['lastname']; ?> <?php echo $record['suffix']; ?> 
         </h5>
