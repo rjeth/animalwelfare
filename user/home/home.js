@@ -189,10 +189,11 @@ $('button[name="edit"]').click(function () {
         method: 'POST',
         dataType: 'json',
         data: {
-            id: id
+            pet_id: id
         },
         success: function (data) {
-            $('#action').val('Edit')
+            $('#pet_id').val(id);
+            $('#action').val('Edit');
             $('#hideImage').hide();
             $('#pet_name').val(data.pet_name);
             $('#pet_type').val(data.pet_type);

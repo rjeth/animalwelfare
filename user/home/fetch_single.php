@@ -1,6 +1,6 @@
 <?php
     include '../../core/config.php';
-    $id = $_POST['id'];
+    $id = $_POST['pet_id'];
     $output = array();
     $query = mysqli_query($connect,"SELECT * FROM tbl_pets WHERE pet_id = $id");
     $row = mysqli_fetch_assoc($query);

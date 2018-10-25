@@ -228,6 +228,7 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button class="btn btn-info" type="submit">Post</button>
                 <input type="hidden" name="action" id="action">
+                <input type="hidden" name="pet_id" id="pet_id">
             </div>
             </form>
         </div>
