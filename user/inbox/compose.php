@@ -1,3 +1,5 @@
+<?php require_once("../../core/session.php"); ?>
+<?php require_once("../../core/config.php"); ?>
 <?php include("../../layout/head2.php");  ?>
 
   <style>
@@ -38,14 +40,19 @@
 
                   <!--Grid column-->
                   <div class="col-md-9 mb-4">
-
+                    <?php
+                    include_once("../../core/config.php");
+                    $sql = "SELECT * FROM user_tbl WHERE user_id = {$user}";
+                    $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                    while( $record = mysqli_fetch_assoc($resultset) ) {
+                    ?>
                       <!--Featured Image-->
                       <form method="post" action="">
                       <div class="card wow fadeIn thin" >
                           <div class="card-body">
                             <div class="form-group">
                                 <label for="postForm">From</label>
-                                <input class="form-control" id="from" name="from" type="text"  disabled></input>
+                                <input class="form-control" id="from" name="from" type="text" value="<?php $record['user_id']; ?>" disabled></input>
                             </div>
                             <div class="form-group">
                                 <label for="postForm">Subject</label>
@@ -60,6 +67,7 @@
                           </div>
                       </div>
                     </form>
+                  <?php } ?>
                   </div>
               </div>
               <!--Grid row-->

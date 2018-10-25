@@ -7,7 +7,7 @@ if($_POST) {
 	$sql = "INSERT INTO `tbl_mail`(`mail_subject`, `user_id`, `receiver_user_id`, `mail_message`) VALUES ([value-1],[value-5],[value-6],[value-7])";
 	if($connect->query($sql) === TRUE) {
 		echo "<p>Succcessfully Updated</p>";
-       header('location:../settings/setting.php');
+       header('location:../inbox/inbox.php');
 	} else {
 		echo "Erorr while updating record : ". $connect->error;
 	}
