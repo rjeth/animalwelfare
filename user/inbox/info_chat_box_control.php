@@ -26,7 +26,7 @@ while( $record = mysqli_fetch_assoc($resultset) ) {
         <textarea name="editor1" required></textarea>
       </div>
       </div>
-      <div class="card-foot table-responsive">
+      <div class="card-footer">
            <button class="btn btn-info " style="float:right" type="submit">post</button>
       </div>
   </div>

@@ -1,3 +1,5 @@
+<?php require_once("../../core/session.php"); ?>
+<?php require_once("../../core/config.php"); ?>
 <?php include("../../layout/head2.php");  ?>
 
   <style>
@@ -52,54 +54,71 @@
                                 ?>
 
                                   <div class="card-body">
+                                    <?php
+                                    $from = $data['user_id'];
+                                    $subj = $data['mail_subject'];
+                                    require_once ("../../core/config.php");
+                                    $sql1 = "SELECT * FROM tbl_mail WHERE mail_subject = '$subj'";
+                                    $resultset = mysqli_query($connect, $sql1) or die("database error:". mysqli_error($connect));
+                                    while( $record1 = mysqli_fetch_assoc($resultset) ) {
+                                      ?>
+
 
                                       <?php
-                                      $from = $data['user_id'];
-                                      require_once ("../../core/config.php");
-                                      $sql = "SELECT * FROM user_tbl WHERE user_id = $from";
-                                      $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
-                                      while( $record = mysqli_fetch_assoc($resultset) ) {
-                                        ?>
+                                      echo "
 
-                                          <small class="form-text text-muted mb-4" >FROM : <?php echo $record['username']; ?> ( <?php echo $record['email_address']; ?> )</small>
-                                        <?php
-                                      }
-                                      ?>
-                                      <p class="form-text text-muted mb-4">SUBJECT : <?php echo $data['mail_subject']; ?></p>
-                                    <div class="img-fluid"><?php echo $data['mail_message'] ?></div>
-                                    <p class="form-text text-muted mb-4">Date Send : <?php echo $data['mail_date']; ?></p>
+                                      <div class='card-body'>
+                                      <form action='action/reply.php' method='post'>
+                                      <p class='form-text text-muted mb-4'>SUBJECT : ";if ($record1['user_id'] == $user){
+                                        echo 'me';
+                                        }else {
+                                          echo 'sender';
+
+                                      }echo"</p>
+                                      <p class='form-text text-muted mb-4'>Date Send : ".$record1['mail_date']."</p>
+
+                                      <p class='form-text text-muted mb-4'>SUBJECT : ".$record1['mail_subject']."</p>
+                                      <input type='hidden' value=".$record1['mail_subject']." name='subj' id='subj'></input>
+                                    <div class='img-fluid'>".$record1['mail_message']."</div>
+                                      <input type='hidden' value=".$from." name='sender' id='sender'></input>
+                                        <input type='hidden' value=".$user." name='from' id='from'></input>
+
                                   </div>
-
-
-                            <?php } ?>
+                                  <hr>";
+                            } } ?>
                           </div>
-
-
-                          <div class="card-foot table-responsive">
-
-                               <button class="btn btn-info " style="float:right" type="submit">post</button>
+                          <div class="card-footer">
+                            <div class="form-group">
+                              <textarea name="editor1" id="content"></textarea>
+                            </div>
+                               <button class="btn btn-info" type="submit">Send</button>
+                             </form>
                           </div>
                       </div>
-
-
                   </div>
               </div>
               <!--Grid row-->
-
           </section>
           <!--Section: Post-->
 
       </div>
   </main>
-		<script>
-    ClassicEditor
-  .create( document.querySelector( '#editor' ), {
+  <script>
+  ClassicEditor
+  .create( document.querySelector( '#content' ),
+  {
       cloudServices: {
-          tokenUrl: 'https://example.com/cs-token-endpoint',
-          uploadUrl: 'https://your-organization-id.cke-cs.com/easyimage/upload/'
+          tokenUrl: 'https://35508.cke-cs.com/token/dev/HsFzvs1xgvvwdno5qQLXFAfumf92hTtKYEzcY1yYH3KIFtf4a8RzpfNShoVM',
+          uploadUrl: 'https://35508.cke-cs.com/easyimage/upload/'
       }
+  }
+ )
+  .then( editor => {
+      console.log( editor );
   } )
-  .then( ... )
-  .catch( ... );
-		</script>
+  .catch( error => {
+      console.error( error );
+  } );
+
+  </script>
 <?php include("../../layout/foot.php"); ?>

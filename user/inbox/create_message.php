@@ -67,7 +67,7 @@
                           </div>
 
 
-                          <div class="card-foot table-responsive">
+                          <div class="card-footer">
 
                                <button class="btn btn-info " style="float:right" type="submit">post</button>
                           </div>
