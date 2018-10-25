@@ -65,12 +65,10 @@
                             </div>
 
                             <div class="form-group">
-                              <textarea name="editor1" id="content">
-
-    </textarea>
+                              <textarea name="editor1" id="content"></textarea>
                           </div>
                           </div>
-                          <div class="card-foot table-responsive">
+                          <div class="card-footer">
                                <button class="btn btn-info " style="float:right" type="submit">post</button>
                           </div>
                       </div>
@@ -101,6 +99,6 @@
     .catch( error => {
         console.error( error );
     } );
-  
+
 		</script>
 <?php include("../../layout/foot.php"); ?>
