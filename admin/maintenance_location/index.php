@@ -16,7 +16,7 @@
         <div class="card mb-3">
             <div class="card-header">
                 <i class="fas fa-table"></i>
-                Data Table Example</div>
+                Location</div>
             <div class="card-body">
                 <button type="button" class="btn btn-success" id="add" style="margin-bottom:20px" data-toggle="modal"
                     data-target="#exampleModal">Add Location</button>
