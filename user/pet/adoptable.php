@@ -1,4 +1,12 @@
+<?php require_once("../../core/session.php"); ?>
+<?php require_once("../../core/config.php"); ?>
 <?php include("../../layout/head2.php");  ?>
+<?php
+$keyword = "";
+if(isset($_POST['keyword'])) {
+$keyword = $_POST['keyword'];
+}
+ ?>
   <style type="text/css">
     /* Necessary for full page carousel*/
     html,
@@ -35,7 +43,7 @@
             <section class="mb-5">
               <!-- Search form -->
               <label for="textInput">Search</label>
-              <input type="text" id="textInput" name="textInput" class="form-control mb-4" placeholder="Text input">
+              <input type="text" id="keyword" name="keyword" class="form-control mb-4" placeholder="Text input">
               <div class="row">
               <div class="col-md-4">
                 <label for="select">Type/label>
