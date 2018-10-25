@@ -11,7 +11,7 @@
       <span>Dashboard</span>
     </a>
   </li>
-  <li class="nav-item dropdown">
+  <!--li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-fw fa-folder"></i>
       <span>Legitimacy</span>
@@ -20,7 +20,7 @@
       <a class="dropdown-item" href="../post_approval">Post Request</a>
       <a class="dropdown-item" href="../approved_post">Post Approved</a>
     </div>
-  </li>
+  </li-->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-fw fa-folder"></i>
