@@ -18,7 +18,8 @@
                 border-radius: 10px;
                   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
                   background-color: #512da8; }
-
+                img { max-width: 100%; }
+}
 
     </style>
 
