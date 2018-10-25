@@ -42,7 +42,7 @@
                   <div class="col-md-9 mb-4">
                     <?php
                     include_once("../../core/config.php");
-                    $sql = "SELECT * FROM user_tbl WHERE user_id = {$user}";
+                    $sql = "SELECT * FROM user_tbl WHERE user_id = $user";
                     $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
                     while( $record = mysqli_fetch_assoc($resultset) ) {
                     ?>

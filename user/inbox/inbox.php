@@ -1,3 +1,5 @@
+<?php require_once("../../core/session.php"); ?>
+<?php require_once("../../core/config.php"); ?>
 <?php include("../../layout/head2.php");  ?>
 
   <style>
@@ -56,14 +58,14 @@
                                 <tr>
                                   <?php
                                   require_once ("../../core/config.php");
-                                  $sql = "SELECT * FROM tbl_mail WHERE receiver_user_id = {$id}";
+                                  $sql = "SELECT * FROM tbl_mail WHERE user_id = $user";
                                   $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
                                   while( $record = mysqli_fetch_assoc($resultset) ) {
                                 ?>
                                   <td style="width:15%" class="text-center" ><a href=info_chat_box.php?id="3"><i class="fas fa-sign-out-alt"></i>Read</a></td>
-                                  <td style="width:20%" class="text-center"><?php $record['user_id'] ?></td>
-                                  <td style="width:50%" class="text-center"><?php $record['mail_subject'] ?></td>
-                                  <td style="width:20%" class="text-center">@mdo</td>
+                                  <td style="width:20%" class="text-center"><?php echo $record['user_id']; ?></td>
+                                  <td style="width:50%" class="text-center"><?php echo $record['mail_subject']; ?></td>
+                                  <td style="width:20%" class="text-center"><?php echo $record['mail_date']; ?></td>
                                 </tr>
                               <?php } ?>
                               </tbody>

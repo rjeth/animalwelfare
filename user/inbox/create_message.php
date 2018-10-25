@@ -40,14 +40,16 @@
 
                   <!--Grid column-->
                   <div class="col-md-9 mb-4">
+
                       <!--Featured Image-->
+
                       <div class="card wow fadeIn thin">
                           <div class="card-body">
                             <?php
                             require_once '../../core/config.php';
                             if($_GET['user_id']) {
                                 $id = $_GET['user_id'];
-                                $sql = "SELECT * FROM user_tbl WHERE user_id = {$id}";
+                                $sql = "SELECT * FROM user_tbl WHERE user_id = $user";
                                 $result = $connect->query($sql);
                                 $data = $result->fetch_assoc();
                                 ?>
