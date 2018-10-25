@@ -23,7 +23,7 @@
 
 
     </style>
-  <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+
   <!-- Navbar -->
 
   <main class="mt-5 pt-5 pb-5">
@@ -55,18 +55,21 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                <tr>
+
                                   <?php
                                   require_once ("../../core/config.php");
                                   $sql = "SELECT * FROM tbl_mail WHERE receiver_user_id = $user";
                                   $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
                                   while( $record = mysqli_fetch_assoc($resultset) ) {
                                 ?>
-                                  <td style="width:15%" class="text-center" ><a href=info_chat_box.php?id="3"><i class="fas fa-sign-out-alt"></i>Read</a></td>
-                                  <td style="width:20%" class="text-center"><?php echo $record['user_id']; ?></td>
-                                  <td style="width:50%" class="text-center"><?php echo $record['mail_subject']; ?></td>
-                                  <td style="width:20%" class="text-center"><?php echo $record['mail_date']; ?></td>
-                                </tr>
+                                <?php echo  "
+                                <tr>
+                                <td style='width:15%' class='text-center' ><a href='info_chat_box.php?id=".$record['mail_id']."'><i class='fas fa-sign-out-alt'></i>Read</a></td>
+                                  <td style='width:20%' class='text-center'>".$record['user_id']."</td>
+                                  <td style='width:50%' class='text-center'>".$record['mail_subject']."</td>
+                                  <td style='width:20%' class='text-center'>".$record['mail_date']."</td>
+                                    </tr>"; ?>
+
                               <?php } ?>
                               </tbody>
                             </table>
@@ -84,7 +87,5 @@
 
       </div>
   </main>
-		<script>
-			CKEDITOR.replace( 'editor1' );
-		</script>
+
 <?php include("../../layout/foot.php"); ?>

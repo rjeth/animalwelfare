@@ -23,7 +23,7 @@
 
 
     </style>
-  <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+
   <!-- Navbar -->
 
   <main class="mt-5 pt-5 pb-5">
@@ -65,7 +65,9 @@
                             </div>
 
                             <div class="form-group">
-                            <textarea name="editor1" required></textarea>
+                              <textarea name="editor1" id="content">
+
+    </textarea>
                           </div>
                           </div>
                           <div class="card-foot table-responsive">
@@ -84,6 +86,21 @@
       </div>
   </main>
 		<script>
-			CKEDITOR.replace( 'editor1' );
+    ClassicEditor
+    .create( document.querySelector( '#content' ),
+    {
+        cloudServices: {
+            tokenUrl: 'https://35508.cke-cs.com/token/dev/HsFzvs1xgvvwdno5qQLXFAfumf92hTtKYEzcY1yYH3KIFtf4a8RzpfNShoVM',
+            uploadUrl: 'https://35508.cke-cs.com/easyimage/upload/'
+        }
+    }
+   )
+    .then( editor => {
+        console.log( editor );
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
+  
 		</script>
 <?php include("../../layout/foot.php"); ?>
