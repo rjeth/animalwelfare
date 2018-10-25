@@ -52,14 +52,20 @@
                           <div class="card-body">
                             <div class="form-group">
                                 <label for="postForm">From</label>
-                                <input class="form-control" id="from" name="from" type="text" value="<?php $record['user_id']; ?>" disabled></input>
+                                <input class="form-control" id="from" name="from" type="hidden" value="<?php echo $record['user_id']; ?>" disabled></input>
+                                <input class="form-control" type="text" value="<?php echo $record['username']; ?>" disabled></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="postForm">To</label>
+                                <input class="form-control" id="subject" name="subject" type="text"></input>
                             </div>
                             <div class="form-group">
                                 <label for="postForm">Subject</label>
                                 <input class="form-control" id="subject" name="subject" type="text"></input>
                             </div>
+
                             <div class="form-group">
-                            <textarea name="editor1" id="editor1"></textarea>
+                            <textarea name="editor1" ></textarea>
                           </div>
                           </div>
                           <div class="card-foot table-responsive">
