@@ -29,12 +29,6 @@
 
 <main class="mt-5 pt-5 pb-5">
     <div class="container">
-
-
-      <!--Section: Main info-->
-
-
-
       <!--Section: Main features & Quick Start-->
       <section class="mb-5">
             <h2 class="font-weight-bold mt-lg-5 mb-5 pb-4"><strong>Adoptable Pets</strong></h2>
