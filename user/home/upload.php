@@ -1,8 +1,6 @@
 <?php
     session_start();
-    if(isset($_POST['id'])){
-        $id = $_POST['id'];
-    }
+    $id = $_POST['pet_id'];
     $type = $_POST['action'];
     include '../../core/config.php';
     $pet_name = $_POST['pet_name'];
@@ -30,7 +28,7 @@
         echo 'Uploaded Sucessfully';
     }
     else{
-        mysqli_query($connect,"UPDATE tbl_pets SET pet_name='$pet_name', pet_age='$pet_age', pet_type='$pet_type', pet_details='$pet_description', pet_category='$pet_breed', pet_gender='$pet_gender', pet_vaccinated='$pet_vaccinated', pet_dewormed='$pet_dewormed'");
+        mysqli_query($connect,"UPDATE tbl_pets SET pet_name='$pet_name', pet_age='$pet_age', pet_type='$pet_type', pet_details='$pet_description', pet_category='$pet_breed', pet_gender='$pet_gender', pet_vaccinated='$pet_vaccinated', pet_dewormed='$pet_dewormed' WHERE pet_id = $id");
         echo 'Edit Sucessfully';
     }
 ?>
