@@ -79,7 +79,7 @@
                               <div class="row">
 
                                   <?php
-                                    include_once("../../core/config.php");
+                                    include_once("../core/config.php");
 
                                      $sql = "SELECT * FROM tbl_pets";
                                      $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($connect));
