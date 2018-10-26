@@ -20,9 +20,16 @@
               <div class="card text-white bg-primary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fas fa-fw fa-comments"></i>
+                    <i class="fas fa-paw"></i>
                   </div>
-                  <div class="mr-5">26 New Messages!</div>
+                  <?php
+                  include_once("../../core/config.php");
+                  $sql = "SELECT COUNT(pet_id) FROM tbl_pets";
+                  $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                  while( $record = mysqli_fetch_assoc($resultset) ) {
+                  ?>
+                  <div class="mr-5"><?php echo $record['COUNT(pet_id)'];  ?> PETS  !</div>
+                  <?php } ?>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" href="#">
                   <span class="float-left">View Details</span>
@@ -38,7 +45,14 @@
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-list"></i>
                   </div>
-                  <div class="mr-5">11 New Tasks!</div>
+                  <?php
+                  include_once("../../core/config.php");
+                  $sql = "SELECT COUNT(user_id) FROM user_tbl";
+                  $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                  while( $record = mysqli_fetch_assoc($resultset) ) {
+                  ?>
+                  <div class="mr-5"><?php echo $record['COUNT(user_id)'];  ?> USERS  !</div>
+                  <?php } ?>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" href="#">
                   <span class="float-left">View Details</span>
@@ -52,11 +66,18 @@
               <div class="card text-white bg-success o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fas fa-fw fa-shopping-cart"></i>
+                    <i class="fas fa-users"></i>
                   </div>
-                  <div class="mr-5">123 New Orders!</div>
+                  <?php
+                  include_once("../../core/config.php");
+                  $sql = "SELECT COUNT(user_id) FROM user_tbl WHERE state = 'active'";
+                  $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                  while( $record = mysqli_fetch_assoc($resultset) ) {
+                  ?>
+                  <div class="mr-5"><?php echo $record['COUNT(user_id)'];  ?> ACTIVE USERS  !</div>
+                  <?php } ?>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
+                <a class="card-footer text-white clearfix small z-1" href="../user_active">
                   <span class="float-left">View Details</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
@@ -70,9 +91,16 @@
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-life-ring"></i>
                   </div>
-                  <div class="mr-5">13 New Tickets!</div>
+                  <?php
+                  include_once("../../core/config.php");
+                  $sql = "SELECT COUNT(petcat_id) FROM pet_category ";
+                  $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
+                  while( $record = mysqli_fetch_assoc($resultset) ) {
+                  ?>
+                  <div class="mr-5"><?php echo $record['COUNT(petcat_id)'];  ?> ACTIVE CATEGORY  !</div>
+                  <?php } ?>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
+                <a class="card-footer text-white clearfix small z-1" href="../maintenance_pet_category">
                   <span class="float-left">View Details</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
