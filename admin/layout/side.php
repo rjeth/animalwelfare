@@ -5,7 +5,7 @@
       <span>Dashboard</span>
     </a>
   </li>
-  <!--li class="nav-item dropdown">
+  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-fw fa-folder"></i>
       <span>Legitimacy</span>
@@ -14,7 +14,7 @@
       <a class="dropdown-item" href="../post_approval">Post Request</a>
       <a class="dropdown-item" href="../approved_post">Post Approved</a>
     </div>
-  </li-->
+  </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-fw fa-folder"></i>
@@ -35,7 +35,7 @@
       <a class="dropdown-item" href="../maintenance_pet_category">Category</a>
     </div>
   </li>
-  <!--li class="nav-item dropdown">
+  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-fw fa-folder"></i>
       <span>Settings</span>
@@ -44,5 +44,5 @@
       <a class="dropdown-item" href="../settings_profile">Profile</a>
       <a class="dropdown-item" href="../settings_change_pass">Change Password</a>
     </div>
-  </li-->
+  </li>
 </ul>

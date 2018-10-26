@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "awdb";
+$username = "thesisd2_user";
+$password = "password";
+$dbname = "thesisd2_awdb";
 // creating the connection
 $connect = new mysqli($servername, $username, $password, $dbname);
 // checking the connection
