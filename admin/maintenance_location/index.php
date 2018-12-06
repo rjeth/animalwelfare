@@ -120,6 +120,7 @@
                 dataType:'json',
                 success:function(data){
                     $('#id').val(id);
+                    $('label').addClass("active");
                     $('#exampleModal').modal('show');
                     $('#loc').val(data.loc_name);
                 }

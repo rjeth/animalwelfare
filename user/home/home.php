@@ -25,8 +25,8 @@
                     include_once("../../core/config.php");
                     $sql = "SELECT * FROM tbl_pets WHERE user = {$user}";
                     $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
-                    while( $record = mysqli_fetch_assoc($resultset) ) {
-                    ?>
+                    while ($record = mysqli_fetch_assoc($resultset)) {
+                        ?>
                     <div class="card mb-4 wow fadeIn">
                         <div class="card-header font-weight-bold">
                             <h3 style="float:left" class="modal-title"><span class="badge red">
@@ -73,21 +73,22 @@
                                 <?php echo $record['pet_details']; ?></label>
                             <p class="mt-0 mb-1 text-muted" for="location">Dewormed</p>
                             <label id="location">
-                                <?php if($record['pet_dewormed'] == 0){
+                                <?php if ($record['pet_dewormed'] == 0) {
                             echo "false";
-                          }else{
+                        } else {
                             echo "true";
-                          } ?></label>
+                        } ?></label>
                             <p class="mt-0 mb-1 text-muted" for="location">Vaccinated</p>
                             <label id="location">
-                                <?php if($record['pet_vaccinated'] == 0){
+                                <?php if ($record['pet_vaccinated'] == 0) {
                             echo "false";
-                          }else{
+                        } else {
                             echo "true";
-                          } ?></label>
+                        } ?></label>
                         </div>
                     </div>
-                    <?php } ?>
+                    <?php
+                    } ?>
                 </div>
                 <!--Grid column-->
                 <!--Grid column-->
@@ -150,12 +151,13 @@
                             include_once("../../core/config.php");
                             $sql = "SELECT * FROM pet_category";
                             $resultset = mysqli_query($connect, $sql) or die("database error:". mysqli_error($conn));
-                            while( $record = mysqli_fetch_assoc($resultset) ) {
-                            ?>
+                            while ($record = mysqli_fetch_assoc($resultset)) {
+                                ?>
                             <option value="<?php echo $record['category_name']; ?>">
                                 <?php echo $record['category_name']; ?>
                             </option>
-                            <?php } ?>
+                            <?php
+                            } ?>
                         </select>
                         <div class="invalid-feedback">
                             Please select
